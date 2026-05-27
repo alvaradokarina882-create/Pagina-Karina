@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { personal } from "@/lib/data/personal";
 
@@ -28,15 +29,16 @@ export function AboutSection() {
 
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden bg-[#141414] w-full h-full border border-[#1e1e1e]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#f9d423] to-[#b8860b] flex items-center justify-center text-black text-3xl font-bold font-serif mx-auto mb-4">
-                      K
-                    </div>
-                    <p className="text-[#404040] text-sm">Foto de Karina Alvarado</p>
-                    <p className="text-[#303030] text-xs mt-1">Reemplazar con imagen real</p>
-                  </div>
-                </div>
+                <Image
+                  src="/images/karina-alvarado.jpg"
+                  alt="Karina Alvarado — Empresaria, Autora y Líder Visionaria"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  priority
+                />
+                {/* Subtle gradient at bottom */}
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
               </div>
 
               {/* Floating badge */}

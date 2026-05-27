@@ -26,7 +26,7 @@ export function HeroSection() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
           <span className="text-xs font-medium text-[#d4a017] tracking-wide uppercase">
-            Emprendedora · Autora · Conferencista
+            Empresaria · Autora · Líder Visionaria
           </span>
         </motion.div>
 
@@ -37,14 +37,14 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] mb-6"
         >
-          <span className="text-white">Transforma tu</span>
+          <span className="text-white">Deja el modo</span>
           <br />
-          <span className="text-gold-gradient">pasión por la</span>
+          <span className="text-gold-gradient">automático.</span>
           <br />
-          <span className="text-white">belleza en un</span>
+          <span className="text-white">Construye desde</span>
           <br />
           <span className="text-gold-gradient glow-gold-text">
-            imperio próspero
+            tu propio sistema
           </span>
         </motion.h1>
 
@@ -55,9 +55,10 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-lg sm:text-xl text-[#a8a8a8] max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Soy Karina Alvarado. He transformado a más de{" "}
-          <strong className="text-white">5,000 profesionales de la belleza</strong> en
-          empresarias exitosas en 20+ países. Sin fórmulas mágicas — con estrategia real.
+          Soy Karina Alvarado — empresaria, creadora de sistemas y líder visionaria.
+          Ayudo a mujeres a{" "}
+          <strong className="text-white">construir negocios con propósito, estructura y dirección</strong>{" "}
+          desde la fuerza interior y la transformación real.
         </motion.p>
 
         {/* CTAs */}

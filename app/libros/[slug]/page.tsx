@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { books } from "@/lib/data/books";
 import { personal } from "@/lib/data/personal";
@@ -86,25 +87,28 @@ export default async function BookPage({
             {/* Book visual */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative animate-float">
+                <div className="absolute bottom-[-16px] left-1/2 -translate-x-1/2 w-3/4 h-6 bg-black/60 blur-xl rounded-full" />
                 <div
-                  className="relative w-72 h-96 rounded-xl overflow-hidden border border-[#d4a017]/30"
+                  className="relative w-64 h-80 rounded-xl overflow-hidden"
                   style={{
-                    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%)",
-                    boxShadow: "0 0 60px rgba(249, 212, 35, 0.15)",
+                    boxShadow: "0 0 60px rgba(249, 212, 35, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
                   }}
                 >
-                  <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                    <div className="text-[#d4a017] text-2xl mb-4">✦</div>
-                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-4">
-                      {book.status === "coming-soon" ? "Próximamente" : "Disponible"}
-                    </div>
-                    <h2 className="font-serif text-2xl font-bold text-white mb-3">
-                      {book.title}
-                    </h2>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#d4a017] to-transparent mb-3" />
-                    <p className="text-xs text-[#606060]">Karina Alvarado</p>
-                  </div>
+                  <Image
+                    src="/images/book-cover.png"
+                    alt={`${book.title} — Karina Alvarado`}
+                    fill
+                    className="object-cover object-right"
+                    sizes="256px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
                 </div>
+                {book.status === "coming-soon" && (
+                  <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
+                    <span>PRE<br />ORDEN</span>
+                  </div>
+                )}
               </div>
             </div>
 

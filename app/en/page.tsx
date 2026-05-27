@@ -57,24 +57,25 @@ export default function EnglishHomePage() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
             <span className="text-xs font-medium text-[#d4a017] tracking-wide uppercase">
-              Entrepreneur · Author · Speaker
+              Entrepreneur · Author · Visionary Leader
             </span>
           </div>
 
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
-            <span className="text-white">Transform your</span>
+            <span className="text-white">Leave automatic</span>
             <br />
-            <span className="text-gold-gradient">passion for beauty</span>
+            <span className="text-gold-gradient">mode.</span>
             <br />
-            <span className="text-white">into a thriving</span>
+            <span className="text-white">Build from</span>
             <br />
-            <span className="text-gold-gradient">empire</span>
+            <span className="text-gold-gradient">your own system</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-[#a8a8a8] max-w-2xl mx-auto mb-10 leading-relaxed">
-            I'm Karina Alvarado. I've helped{" "}
-            <strong className="text-white">5,000+ beauty professionals</strong> become
-            successful entrepreneurs in 20+ countries. No magic formulas — real strategy.
+            I'm Karina Alvarado — entrepreneur, systems creator, and visionary leader.
+            I help women{" "}
+            <strong className="text-white">build businesses with purpose, structure, and direction</strong>{" "}
+            from inner strength and real transformation.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -159,11 +160,11 @@ export default function EnglishHomePage() {
               The book
             </span>
             <h2 className="font-serif text-4xl font-bold mb-6">
-              <span className="text-gold-gradient">Beauty That Thrives</span>
+              <span className="text-gold-gradient">From Zero to Building My Own System</span>
             </h2>
             <p className="text-[#a8a8a8] leading-relaxed mb-8">
-              The definitive manual for building a profitable and sustainable beauty business.
-              Coming 2025.
+              The roadmap to design a brand with character, structure, and direction.
+              Published by Legacy. Coming 2025.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/en/books" className="btn-gold px-6 py-3 text-sm font-bold">

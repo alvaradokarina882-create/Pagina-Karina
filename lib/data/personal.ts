@@ -1,58 +1,58 @@
 export const personal = {
   name: "Karina Alvarado",
-  title: "Emprendedora · Autora · Conferencista",
-  titleEn: "Entrepreneur · Author · Speaker",
-  tagline: "Transforma tu pasión por la belleza en un imperio próspero",
-  taglineEn: "Transform your passion for beauty into a thriving empire",
+  title: "Empresaria · Autora · Líder Visionaria",
+  titleEn: "Entrepreneur · Author · Visionary Leader",
+  tagline: "Deja el modo automático. Construye un negocio con propósito, estructura y dirección.",
+  taglineEn: "Leave automatic mode. Build a business with purpose, structure, and direction.",
   description:
-    "Karina Alvarado es una de las voces más influyentes en la intersección de la belleza y los negocios en Latinoamérica. Con más de 15 años en la industria, ha transformado la manera en que miles de profesionales de la belleza construyen sus marcas y escalan sus negocios.",
+    "Karina Alvarado es empresaria, creadora de sistemas y líder visionaria que transformó su historia personal en una filosofía de crecimiento, estructura y liderazgo consciente. Su misión es ayudar a mujeres emprendedoras a dejar el modo automático, construir negocios con propósito y liderar desde la fuerza interior, la estrategia y la transformación real.",
   descriptionEn:
-    "Karina Alvarado is one of the most influential voices at the intersection of beauty and business in Latin America. With over 15 years in the industry, she has transformed the way thousands of beauty professionals build their brands and scale their businesses.",
+    "Karina Alvarado is an entrepreneur, systems creator, and visionary leader who transformed her personal story into a philosophy of growth, structure, and conscious leadership. Her mission is to help women entrepreneurs leave automatic mode, build businesses with purpose, and lead from inner strength, strategy, and real transformation.",
   bio: [
-    "Empecé con un kit de maquillaje prestado y un sueño que no cabía en el presupuesto. Hoy, después de 15 años construyendo negocios en la industria de la belleza, sé con certeza que el talento no es suficiente — necesitas estrategia, mentalidad y las herramientas correctas.",
-    "He fundado y escalado múltiples marcas en el sector belleza, formado a más de 5,000 profesionales en Latinoamérica y Estados Unidos, y me he convertido en la referente que yo misma necesitaba cuando empecé.",
-    "Mi misión es simple: que ninguna emprendedora de belleza vuelva a improvisar su negocio. Que cada profesional tenga acceso a la educación empresarial que merece — sin filtros, sin rodeos, con resultados reales.",
+    "Karina Alvarado es empresaria, creadora de sistemas y líder visionaria que transformó su historia personal en una filosofía de crecimiento, estructura y liderazgo consciente.",
+    "Su misión es ayudar a mujeres emprendedoras a dejar el modo automático, construir negocios con propósito y liderar desde la fuerza interior, la estrategia y la transformación real.",
+    "Ha formado a miles de mujeres emprendedoras para dejar de improvisar y empezar a construir desde una identidad clara — con estructura empresarial real, propósito definido y sistemas que funcionan sin ellas presentes.",
   ],
   bioEn: [
-    "I started with a borrowed makeup kit and a dream that didn't fit the budget. Today, after 15 years building businesses in the beauty industry, I know for certain that talent is not enough — you need strategy, mindset, and the right tools.",
-    "I've founded and scaled multiple beauty brands, trained over 5,000 professionals across Latin America and the United States, and become the reference that I myself needed when I started.",
-    "My mission is simple: no beauty entrepreneur should have to improvise their business again. Every professional deserves access to the business education they deserve — no filters, no detours, with real results.",
+    "Karina Alvarado is an entrepreneur, systems creator, and visionary leader who transformed her personal story into a philosophy of growth, structure, and conscious leadership.",
+    "Her mission is to help women entrepreneurs leave automatic mode, build businesses with purpose, and lead from inner strength, strategy, and real transformation.",
+    "She has trained thousands of women entrepreneurs to stop improvising and start building from a clear identity — with real business structure, defined purpose, and systems that work without them being present.",
   ],
   filosofia: [
     {
-      title: "Belleza con Propósito",
-      titleEn: "Beauty with Purpose",
+      title: "Identidad Primero",
+      titleEn: "Identity First",
       description:
-        "La belleza es una industria poderosa. Cuando la combinas con estrategia de negocios, creas un impacto que va más allá del espejo.",
+        "Antes de la estrategia viene la claridad. Tu propósito, valores y decisiones son el cimiento de cualquier negocio que dure.",
       descriptionEn:
-        "Beauty is a powerful industry. When you combine it with business strategy, you create an impact that goes beyond the mirror.",
+        "Before strategy comes clarity. Your purpose, values, and decisions are the foundation of any business that lasts.",
       icon: "✦",
     },
     {
-      title: "Educación sin Límites",
-      titleEn: "Limitless Education",
+      title: "Estructura que Libera",
+      titleEn: "Structure that Frees",
       description:
-        "El conocimiento empresarial no debería ser exclusivo de los que van a la universidad. Democratizo la educación para emprendedoras de belleza.",
+        "Los sistemas no te encadenan — te liberan. Un negocio con estructura funciona sin que tú estés presente en cada decisión.",
       descriptionEn:
-        "Business knowledge shouldn't be exclusive to those who go to university. I democratize education for beauty entrepreneurs.",
+        "Systems don't chain you — they free you. A business with structure works without you being present in every decision.",
       icon: "◈",
     },
     {
-      title: "Resultados Sobre Teoría",
-      titleEn: "Results Over Theory",
+      title: "Liderazgo Consciente",
+      titleEn: "Conscious Leadership",
       description:
-        "Todo lo que enseño lo he vivido. Sin fórmulas mágicas, sin atajos falsos — solo estrategias probadas en el campo real.",
+        "Liderar desde adentro hacia afuera. La transformación real no es táctica — es una forma de pensar, decidir y ejecutar.",
       descriptionEn:
-        "Everything I teach I've lived. No magic formulas, no false shortcuts — only strategies proven in the real field.",
+        "Leading from the inside out. Real transformation isn't tactical — it's a way of thinking, deciding, and executing.",
       icon: "◆",
     },
     {
-      title: "Comunidad Primero",
-      titleEn: "Community First",
+      title: "Dejar el Modo Automático",
+      titleEn: "Leave Automatic Mode",
       description:
-        "Crecemos juntas. Mi ecosistema de emprendedoras de belleza es el activo más valioso que he construido.",
+        "La mayoría opera en piloto automático repitiendo patrones que no funcionan. La conciencia es el primer paso al cambio real.",
       descriptionEn:
-        "We grow together. My ecosystem of beauty entrepreneurs is the most valuable asset I've built.",
+        "Most people operate on autopilot repeating patterns that don't work. Awareness is the first step to real change.",
       icon: "❋",
     },
   ],

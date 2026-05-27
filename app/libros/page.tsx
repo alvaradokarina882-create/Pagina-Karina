@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { books } from "@/lib/data/books";
 import { personal } from "@/lib/data/personal";
@@ -6,14 +7,15 @@ import { personal } from "@/lib/data/personal";
 const baseUrl = personal.siteUrl;
 
 export const metadata: Metadata = {
-  title: "Libros — Belleza que Prospera",
+  title: "Libros — De Cero a Hacer Mi Propio Sistema",
   description:
-    "Descubre los libros de Karina Alvarado sobre negocios de belleza. 'Belleza que Prospera' — el manual definitivo para construir un negocio de belleza rentable y sostenible. Próximamente 2025.",
+    "Descubre el libro de Karina Alvarado: 'De Cero a Hacer Mi Propio Sistema' — el camino para diseñar una marca con carácter, estructura y dirección. Publicado por Legacy. Próximamente 2025.",
   keywords: [
     "Karina Alvarado libros",
-    "libro negocios belleza",
-    "Belleza que Prospera",
-    "emprendimiento belleza libro",
+    "De Cero a Hacer Mi Propio Sistema",
+    "libro emprendimiento mujeres",
+    "libro sistemas negocios",
+    "Legacy editorial",
   ],
   openGraph: {
     title: "Libros | Karina Alvarado",
@@ -88,33 +90,23 @@ export default function LibrosPage() {
               <div className="relative animate-float">
                 <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-3/4 h-8 bg-black/60 blur-xl rounded-full" />
                 <div
-                  className="relative w-72 h-96 lg:w-96 lg:h-[30rem] rounded-xl overflow-hidden border border-[#d4a017]/30"
+                  className="relative w-64 h-80 lg:w-80 lg:h-[26rem] rounded-xl overflow-hidden"
                   style={{
-                    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%)",
-                    boxShadow: "0 0 60px rgba(249, 212, 35, 0.15), inset 0 0 0 1px rgba(212, 160, 23, 0.1)",
+                    boxShadow: "0 0 60px rgba(249, 212, 35, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
                   }}
                 >
-                  <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#b8860b]/30 to-transparent" />
-                  <div className="flex flex-col items-center justify-center h-full p-10 text-center">
-                    <div className="text-[#d4a017] text-3xl mb-6">✦</div>
-                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-8 border border-[#d4a017]/20 px-3 py-1 rounded-full">
-                      Próximamente 2025
-                    </div>
-                    <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
-                      {book.title}
-                    </h2>
-                    <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#d4a017] to-transparent mb-4" />
-                    <p className="text-xs text-[#606060] leading-relaxed max-w-[200px]">
-                      {book.subtitle}
-                    </p>
-                    <div className="mt-8 text-sm text-[#a8a8a8] font-serif italic">
-                      Karina Alvarado
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/3 via-transparent to-transparent pointer-events-none" />
+                  <Image
+                    src="/images/book-cover.png"
+                    alt="De Cero a Hacer Mi Propio Sistema — Karina Alvarado"
+                    fill
+                    className="object-cover object-right"
+                    sizes="(max-width: 768px) 256px, 320px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
                 </div>
                 <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                  <span>PRE<br/>ORDEN</span>
+                  <span>PRE<br />ORDEN</span>
                 </div>
               </div>
             </div>

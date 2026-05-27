@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { books } from "@/lib/data/books";
 
@@ -12,7 +13,6 @@ export function BookSection() {
 
   return (
     <section id="libro" className="py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
-      {/* Gold radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#f9d423]/3 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
@@ -29,36 +29,28 @@ export function BookSection() {
               {/* Book shadow */}
               <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-3/4 h-8 bg-black/60 blur-xl rounded-full" />
 
-              {/* Book cover */}
-              <div className="relative w-64 h-80 lg:w-80 lg:h-[28rem] rounded-lg overflow-hidden border border-[#d4a017]/30"
+              {/* Book cover with real image */}
+              <div
+                className="relative w-56 h-72 lg:w-72 lg:h-96 rounded-lg overflow-hidden"
                 style={{
-                  background: "linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%)",
-                  boxShadow: "0 0 40px rgba(249, 212, 35, 0.15), inset 0 0 0 1px rgba(212, 160, 23, 0.1)",
+                  boxShadow: "0 0 50px rgba(249, 212, 35, 0.2), 0 25px 60px rgba(0,0,0,0.6)",
                 }}
               >
-                {/* Book spine effect */}
-                <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-[#b8860b]/30 to-transparent" />
-
-                {/* Book content */}
-                <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                  <div className="text-[#d4a017] text-2xl mb-4">✦</div>
-                  <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-6">
-                    Próximamente
-                  </div>
-                  <h3 className="font-serif text-2xl lg:text-3xl font-bold text-white leading-tight mb-4">
-                    {book.title}
-                  </h3>
-                  <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#d4a017] to-transparent mb-4" />
-                  <p className="text-xs text-[#606060]">Karina Alvarado</p>
-                </div>
-
-                {/* Shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/3 via-transparent to-transparent" />
+                <Image
+                  src="/images/book-cover.png"
+                  alt="De Cero a Hacer Mi Propio Sistema — Karina Alvarado"
+                  fill
+                  className="object-cover object-right"
+                  sizes="(max-width: 768px) 224px, 288px"
+                  priority
+                />
+                {/* Subtle shine overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
               </div>
 
               {/* Coming soon badge */}
               <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                <span>PRÓX.<br/>2025</span>
+                <span>PRÓX.<br />2025</span>
               </div>
             </div>
           </motion.div>
@@ -82,6 +74,12 @@ export function BookSection() {
               {book.description}
             </p>
 
+            {/* Publisher badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1e1e1e] mb-6">
+              <span className="text-xs text-[#404040]">Publicado por</span>
+              <span className="text-xs font-semibold text-[#d4a017]">{book.publisher}</span>
+            </div>
+
             {/* Bonuses teaser */}
             <div className="card-premium p-5 mb-8">
               <h3 className="text-sm font-semibold text-[#d4a017] mb-3 uppercase tracking-wider">
@@ -98,7 +96,7 @@ export function BookSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/libros/belleza-que-prospera" className="btn-gold px-6 py-3 text-sm font-bold text-center">
+              <Link href={`/libros/${book.slug}`} className="btn-gold px-6 py-3 text-sm font-bold text-center">
                 Registrarme para pre-orden
               </Link>
               <Link href="/libros" className="btn-ghost-gold px-6 py-3 text-sm text-center">

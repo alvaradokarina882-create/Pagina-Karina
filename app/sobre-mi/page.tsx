@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { personal } from "@/lib/data/personal";
 import { speakingEvents } from "@/lib/data/testimonials";
 
@@ -87,13 +88,15 @@ export default function SobreMiPage() {
             {/* Foto */}
             <div className="lg:col-span-1">
               <div className="sticky top-24">
-                <div className="aspect-[3/4] rounded-2xl bg-[#141414] border border-[#1e1e1e] flex items-center justify-center mb-6">
-                  <div className="text-center">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f9d423] to-[#b8860b] flex items-center justify-center text-black text-2xl font-bold font-serif mx-auto mb-3">
-                      K
-                    </div>
-                    <p className="text-[#404040] text-xs">Foto de Karina Alvarado</p>
-                  </div>
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[#1e1e1e] mb-6">
+                  <Image
+                    src="/images/karina-alvarado.jpg"
+                    alt="Karina Alvarado — Empresaria, Autora y Líder Visionaria"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 300px"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Quick facts */}
