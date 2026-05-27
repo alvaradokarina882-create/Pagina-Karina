@@ -1,4 +1,4 @@
-# Robots.txt — karinaalvarado.com
+# Robots.txt — karinalvarado.com
 # Allow all crawlers including AI bots
 
 User-agent: *
@@ -60,4 +60,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap
-Sitemap: https://karinaalvarado.com/sitemap.xml
+Sitemap: https://karinalvarado.com/sitemap.xml

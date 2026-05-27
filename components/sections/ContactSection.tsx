@@ -106,9 +106,9 @@ export function ContactSection() {
               <div className="flex gap-3">
                 {[
                   { label: "Instagram", href: personal.socialLinks.instagram },
+                  { label: "Facebook", href: personal.socialLinks.facebook },
                   { label: "TikTok", href: personal.socialLinks.tiktok },
                   { label: "YouTube", href: personal.socialLinks.youtube },
-                  { label: "LinkedIn", href: personal.socialLinks.linkedin },
                 ].map((social) => (
                   <a
                     key={social.label}

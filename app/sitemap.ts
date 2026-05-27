@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/data/blog";
 import { books } from "@/lib/data/books";
 
-const baseUrl = "https://karinaalvarado.com";
+const baseUrl = "https://karinalvarado.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

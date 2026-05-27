@@ -38,17 +38,16 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-[#606060] text-sm leading-relaxed max-w-xs mb-6">
-              Emprendedora, autora y conferencista especializada en la intersección
-              de belleza y negocios. Transformando vidas a través del emprendimiento
-              consciente.
+              Empresaria, creadora de sistemas y líder visionaria. Ayudo a mujeres a
+              construir negocios con propósito, estructura y dirección.
             </p>
             {/* Social links */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               {[
                 { href: personal.socialLinks.instagram, icon: "IG", label: "Instagram" },
+                { href: personal.socialLinks.facebook, icon: "FB", label: "Facebook" },
                 { href: personal.socialLinks.tiktok, icon: "TK", label: "TikTok" },
                 { href: personal.socialLinks.youtube, icon: "YT", label: "YouTube" },
-                { href: personal.socialLinks.linkedin, icon: "IN", label: "LinkedIn" },
               ].map((social) => (
                 <a
                   key={social.label}

@@ -24,20 +24,22 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Karina Alvarado | Emprendedora, Autora & Conferencista en Belleza y Negocios",
+    default: "Karina Alvarado | Empresaria, Autora & Líder Visionaria",
     template: "%s | Karina Alvarado",
   },
   description:
-    "Karina Alvarado: emprendedora, autora y conferencista. Especialista en transformar profesionales de la belleza en empresarias exitosas. Estrategias de negocios, marketing y liderazgo para la industria de la belleza.",
+    "Karina Alvarado: empresaria, autora y líder visionaria. Creadora de sistemas que ayuda a mujeres emprendedoras a construir negocios con propósito, estructura y dirección. Autora de 'De Cero a Hacer Mi Propio Sistema'.",
   keywords: [
     "Karina Alvarado",
-    "emprendedora belleza",
-    "negocios de belleza",
-    "conferencista belleza",
-    "marketing salón de belleza",
-    "empresaria belleza latinoamérica",
-    "cursos negocio belleza",
-    "coaching belleza",
+    "empresaria liderazgo",
+    "sistemas de negocios",
+    "liderazgo femenino",
+    "emprendimiento mujeres",
+    "conferencista motivacional",
+    "De Cero a Hacer Mi Propio Sistema",
+    "coaching empresarial",
+    "líder visionaria",
+    "mentoría negocios",
   ],
   authors: [{ name: "Karina Alvarado", url: baseUrl }],
   creator: "Karina Alvarado",
@@ -59,9 +61,9 @@ export const metadata: Metadata = {
     alternateLocale: "en_US",
     url: baseUrl,
     siteName: "Karina Alvarado",
-    title: "Karina Alvarado | Emprendedora, Autora & Conferencista",
+    title: "Karina Alvarado | Empresaria, Autora & Líder Visionaria",
     description:
-      "Especialista en transformar profesionales de la belleza en empresarias exitosas. Estrategias probadas en negocios, marketing y liderazgo.",
+      "Empresaria, creadora de sistemas y líder visionaria. Ayuda a mujeres a construir negocios con propósito, estructura y dirección. Autora de 'De Cero a Hacer Mi Propio Sistema'.",
     images: [
       {
         url: `${baseUrl}/images/og-default.jpg`,
@@ -73,11 +75,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@karinaalvarado",
-    creator: "@karinaalvarado",
-    title: "Karina Alvarado | Emprendedora, Autora & Conferencista",
+    site: "@Karina.alvarados",
+    creator: "@Karina.alvarados",
+    title: "Karina Alvarado | Empresaria, Autora & Líder Visionaria",
     description:
-      "Especialista en transformar profesionales de la belleza en empresarias exitosas.",
+      "Empresaria y líder visionaria. Ayuda a mujeres a construir negocios con propósito, estructura y dirección.",
     images: [`${baseUrl}/images/og-default.jpg`],
   },
   alternates: {
@@ -100,7 +102,7 @@ const jsonLd = {
       "@id": `${baseUrl}/#website`,
       url: baseUrl,
       name: "Karina Alvarado",
-      description: "Emprendedora, Autora & Conferencista en Belleza y Negocios",
+      description: "Empresaria, Autora & Líder Visionaria — De Cero a Hacer Mi Propio Sistema",
       inLanguage: ["es-MX", "en-US"],
       potentialAction: {
         "@type": "SearchAction",
@@ -124,20 +126,20 @@ const jsonLd = {
       },
       sameAs: [
         personal.socialLinks.instagram,
+        personal.socialLinks.facebook,
         personal.socialLinks.youtube,
         personal.socialLinks.tiktok,
-        personal.socialLinks.linkedin,
       ],
-      jobTitle: "Emprendedora, Autora y Conferencista",
+      jobTitle: "Empresaria, Autora y Líder Visionaria",
       knowsAbout: [
-        "Emprendimiento",
-        "Negocios de Belleza",
-        "Marketing Digital",
-        "Liderazgo Femenino",
-        "Educación Empresarial",
+        "Sistemas de Negocios",
+        "Liderazgo Consciente",
+        "Emprendimiento Femenino",
+        "Identidad Empresarial",
+        "Estructura y Dirección",
       ],
       description:
-        "Karina Alvarado es emprendedora, autora y conferencista especializada en la intersección de belleza y negocios. Con más de 15 años de experiencia, ha transformado a más de 5,000 profesionales de la belleza en empresarias exitosas.",
+        "Karina Alvarado es empresaria, creadora de sistemas y líder visionaria que transformó su historia personal en una filosofía de crecimiento, estructura y liderazgo consciente. Autora del libro 'De Cero a Hacer Mi Propio Sistema' (Legacy).",
     },
     {
       "@type": "SiteNavigationElement",
