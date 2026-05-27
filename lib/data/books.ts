@@ -1,0 +1,57 @@
+export const books = [
+  {
+    slug: "belleza-que-prospera",
+    title: "Belleza que Prospera",
+    titleEn: "Beauty That Thrives",
+    subtitle: "El manual definitivo para construir un negocio de belleza rentable y sostenible",
+    subtitleEn: "The definitive manual for building a profitable and sustainable beauty business",
+    description:
+      "El libro que la industria de la belleza estaba esperando. Karina Alvarado comparte por primera vez el sistema exacto que usó para transformar su pasión en un negocio de 7 cifras, los errores que casi la hunden, y las estrategias que ningún curso de cosmetología te enseña.",
+    descriptionEn:
+      "The book the beauty industry was waiting for. Karina Alvarado shares for the first time the exact system she used to transform her passion into a 7-figure business, the mistakes that almost sank her, and the strategies no cosmetology course teaches you.",
+    longDescription: [
+      "¿Cuántas veces has sentido que eres increíble en tu trabajo pero tu negocio no despega? ¿Que tus servicios son excepcionales pero al final del mes los números no cuadran? Ese dolor tiene nombre: es la brecha entre artista y empresaria.",
+      "Belleza que Prospera es el puente que cierra esa brecha. En sus páginas encontrarás el sistema IMPERIAL — el método de 6 pasos que Karina desarrolló a partir de 15 años de errores, victorias y todo lo que está en medio.",
+      "Desde cómo estructurar tus precios para dejar de intercambiar tiempo por dinero, hasta cómo construir una lista de espera de clientes que pagan premium — este libro es el MBA que ninguna escuela de belleza te da.",
+    ],
+    longDescriptionEn: [
+      "How many times have you felt that you're amazing at your craft but your business isn't taking off? That your services are exceptional but at the end of the month the numbers don't add up? That pain has a name: it's the gap between artist and entrepreneur.",
+      "Beauty That Thrives is the bridge that closes that gap. In its pages you'll find the IMPERIAL system — the 6-step method Karina developed from 15 years of mistakes, victories, and everything in between.",
+      "From how to structure your prices to stop trading time for money, to how to build a waiting list of premium-paying clients — this book is the MBA no beauty school gives you.",
+    ],
+    chapters: [
+      "El mito de la pasión: por qué amar lo que haces no paga las facturas",
+      "El Sistema IMPERIAL: los 6 pilares del negocio de belleza próspero",
+      "Precios con propósito: cobra lo que vales (y lo que necesitas)",
+      "Marketing que atrae: el cliente ideal no busca precio, busca transformación",
+      "Operaciones que escalan: de solopreneura a dueña de negocio",
+      "Finanzas sin miedo: entiende tus números y toma decisiones poderosas",
+      "Liderazgo y equipo: cómo contratar, formar y retener talento",
+      "El futuro de tu negocio: ecosistemas, marcas propias y legado",
+    ],
+    chaptersEn: [
+      "The passion myth: why loving what you do doesn't pay the bills",
+      "The IMPERIAL System: the 6 pillars of a thriving beauty business",
+      "Purposeful pricing: charge what you're worth (and what you need)",
+      "Marketing that attracts: the ideal client isn't looking for price, they seek transformation",
+      "Operations that scale: from solopreneur to business owner",
+      "Finance without fear: understand your numbers and make powerful decisions",
+      "Leadership and team: how to hire, train, and retain talent",
+      "The future of your business: ecosystems, own brands, and legacy",
+    ],
+    status: "coming-soon",
+    releaseDate: "2025",
+    cover: "/images/book-cover.jpg",
+    isbn: "en proceso",
+    pages: 280,
+    publisher: "Independiente",
+    language: "Español",
+    preorderLink: "#preorder",
+    bonuses: [
+      "Plantilla Excel: Control financiero para tu negocio de belleza",
+      "Guía PDF: Los 50 servicios más rentables en belleza",
+      "Acceso: Comunidad privada de emprendedoras IMPERIAL",
+      "Video: Masterclass de pricing con Karina Alvarado",
+    ],
+  },
+];
