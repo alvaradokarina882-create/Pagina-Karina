@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
     const { error } = await resend.emails.send({
       from: "Formulario Web <noreply@soykarinaalvarado.com>",
-      to: ["administrador@soykarinaalvarado.com"],
+      to: ["administradora@karinaalvarado.com"],
       replyTo: email,
       subject: `[Web] ${tipo || "Consulta general"} — ${nombre}`,
       html: `
