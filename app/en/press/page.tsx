@@ -74,7 +74,7 @@ export default function EnPressPage() {
                   Named by Forbes México among the 30 Most Influential Women in
                   Entrepreneurship 2024, she is a speaker at TEDx, L'Oréal Business Forum,
                   and Entrepreneur Latin America Conference. Her first book,
-                  "Beauty That Thrives," will be published in 2025.
+                  "De Cero a Hacer Mi Propio Sistema," will be published in 2026.
                 </p>
               </div>
             </div>

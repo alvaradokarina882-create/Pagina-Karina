@@ -79,7 +79,7 @@ export default function EnBooksPage() {
                 >
                   <div className="flex flex-col items-center justify-center h-full p-8 text-center">
                     <div className="text-[#d4a017] text-2xl mb-4">✦</div>
-                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-4">Coming 2025</div>
+                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-4">Coming 2026</div>
                     <h2 className="font-serif text-2xl font-bold text-white mb-3">{book.titleEn}</h2>
                     <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#d4a017] to-transparent mb-3" />
                     <p className="text-xs text-[#606060]">Karina Alvarado</p>
@@ -95,7 +95,7 @@ export default function EnBooksPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
-                <span className="text-xs text-[#d4a017]">Coming 2025</span>
+                <span className="text-xs text-[#d4a017]">Coming 2026</span>
               </div>
               <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
                 {book.titleEn}

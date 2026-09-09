@@ -156,7 +156,7 @@ export default function PrensaPage() {
                   Reconocida por Forbes México entre las 30 Mujeres más Influyentes en
                   Emprendimiento 2024, es speaker en eventos de la talla de TEDx, L'Oréal
                   Business Forum y Entrepreneur Latinoamérica Conference. Su primer libro,
-                  "Belleza que Prospera", se publicará en 2025.
+                  "De Cero a Hacer Mi Propio Sistema", se publicará en 2026.
                 </p>
               </div>
             </div>

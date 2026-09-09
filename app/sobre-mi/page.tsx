@@ -49,7 +49,7 @@ const timeline = [
   { year: "2020", event: "Expansión digital: formación online, comunidad y contenido. +1,000 alumnas" },
   { year: "2022", event: "TEDx Bogotá. Reconocida como voz líder en belleza y negocios en LATAM" },
   { year: "2024", event: "5,000+ mujeres formadas en 20+ países. Libro en proceso" },
-  { year: "2025", event: "Publicación de 'Belleza que Prospera'. Nuevo programa IMPERIAL" },
+  { year: "2026", event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Nuevo programa IMPERIAL" },
 ];
 
 export default function SobreMiPage() {

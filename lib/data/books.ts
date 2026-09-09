@@ -40,7 +40,7 @@ export const books = [
       "Your business as a reflection of who you are: real sustainability",
     ],
     status: "coming-soon",
-    releaseDate: "2025",
+    releaseDate: "2026",
     cover: "/images/book-cover.png",
     isbn: "en proceso",
     pages: 280,

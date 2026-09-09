@@ -9,13 +9,40 @@ export function ContactSection() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    setLoading(false);
-    setSent(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      nombre: (form.elements.namedItem("nombre") as HTMLInputElement).value,
+      pais: (form.elements.namedItem("pais") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      tipo: (form.elements.namedItem("tipo") as HTMLSelectElement).value,
+      mensaje: (form.elements.namedItem("mensaje") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSent(true);
+      } else {
+        const body = await res.json();
+        setError(body.error || "Ocurrió un error. Intenta de nuevo.");
+      }
+    } catch {
+      setError("No se pudo enviar el mensaje. Verifica tu conexión.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactOptions = [
@@ -150,6 +177,7 @@ export function ContactSection() {
                       Nombre
                     </label>
                     <input
+                      name="nombre"
                       type="text"
                       required
                       className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50 transition-colors"
@@ -161,6 +189,7 @@ export function ContactSection() {
                       País
                     </label>
                     <input
+                      name="pais"
                       type="text"
                       className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50 transition-colors"
                       placeholder="Tu país"
@@ -173,6 +202,7 @@ export function ContactSection() {
                     Email
                   </label>
                   <input
+                    name="email"
                     type="email"
                     required
                     className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50 transition-colors"
@@ -184,7 +214,10 @@ export function ContactSection() {
                   <label className="block text-xs text-[#606060] mb-1.5 uppercase tracking-wide">
                     Tipo de consulta
                   </label>
-                  <select className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#d4a017]/50 transition-colors">
+                  <select
+                    name="tipo"
+                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#d4a017]/50 transition-colors"
+                  >
                     <option value="">Seleccionar...</option>
                     <option>Contratar como conferencista</option>
                     <option>Mentoría de negocios</option>
@@ -199,12 +232,17 @@ export function ContactSection() {
                     Mensaje
                   </label>
                   <textarea
+                    name="mensaje"
                     required
                     rows={4}
                     className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50 transition-colors resize-none"
                     placeholder="Cuéntame sobre tu proyecto o pregunta..."
                   />
                 </div>
+
+                {error && (
+                  <p className="text-red-400 text-xs">{error}</p>
+                )}
 
                 <button
                   type="submit"

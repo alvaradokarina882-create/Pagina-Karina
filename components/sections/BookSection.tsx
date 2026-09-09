@@ -50,7 +50,7 @@ export function BookSection() {
 
               {/* Coming soon badge */}
               <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                <span>PRÓX.<br />2025</span>
+                <span>PRÓX.<br />2026</span>
               </div>
             </div>
           </motion.div>

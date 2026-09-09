@@ -9,7 +9,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Libros — De Cero a Hacer Mi Propio Sistema",
   description:
-    "Descubre el libro de Karina Alvarado: 'De Cero a Hacer Mi Propio Sistema' — el camino para diseñar una marca con carácter, estructura y dirección. Publicado por Legacy. Próximamente 2025.",
+    "Descubre el libro de Karina Alvarado: 'De Cero a Hacer Mi Propio Sistema' — el camino para diseñar una marca con carácter, estructura y dirección. Publicado por Legacy.",
   keywords: [
     "Karina Alvarado libros",
     "De Cero a Hacer Mi Propio Sistema",
@@ -115,7 +115,7 @@ export default function LibrosPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
-                <span className="text-xs text-[#d4a017]">Próximamente 2025</span>
+                <span className="text-xs text-[#d4a017]">Próximamente 2026</span>
               </div>
 
               <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">

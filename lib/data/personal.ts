@@ -75,5 +75,5 @@ export const personal = {
     booking: "booking@karinalvarado.com",
     press: "prensa@karinalvarado.com",
   },
-  siteUrl: "https://karinalvarado.com",
+  siteUrl: "https://soykarinaalvarado.com",
 };

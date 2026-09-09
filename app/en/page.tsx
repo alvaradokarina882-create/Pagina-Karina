@@ -164,7 +164,7 @@ export default function EnglishHomePage() {
             </h2>
             <p className="text-[#a8a8a8] leading-relaxed mb-8">
               The roadmap to design a brand with character, structure, and direction.
-              Published by Legacy. Coming 2025.
+              Published by Legacy. Coming 2026.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/en/books" className="btn-gold px-6 py-3 text-sm font-bold">
