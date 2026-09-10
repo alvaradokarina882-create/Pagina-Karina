@@ -43,8 +43,8 @@ export function AboutSection() {
 
               {/* Floating badge */}
               <div className="absolute -bottom-6 -right-6 card-premium p-4 glow-gold-sm">
-                <div className="text-2xl font-bold text-gold">2009</div>
-                <div className="text-xs text-[#606060]">En la industria desde</div>
+                <div className="text-2xl font-bold text-gold">28+</div>
+                <div className="text-xs text-[#606060]">Años en la industria</div>
               </div>
             </div>
           </motion.div>

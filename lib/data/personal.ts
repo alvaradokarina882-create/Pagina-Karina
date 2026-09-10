@@ -57,7 +57,8 @@ export const personal = {
     },
   ],
   stats: [
-    { value: "2009", label: "Inicio en la industria", labelEn: "In the industry since" },
+    { value: "28+", label: "Años en la industria de la belleza", labelEn: "Years in the beauty industry" },
+    { value: "15+", label: "Años fundando y liderando Alvarado's", labelEn: "Years leading Alvarado's" },
     { value: "1", label: "Libro (próximamente)", labelEn: "Book (coming soon)" },
   ],
   socialLinks: {

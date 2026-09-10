@@ -7,7 +7,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Sobre mí — Mi Historia y Trayectoria",
   description:
-    "Conoce la historia de Karina Alvarado: de profesional de la belleza a emprendedora, autora y conferencista. Creadora del Sistema IMPERIAL y voz de referencia en emprendimiento femenino en Latinoamérica.",
+    "Conoce la historia de Karina Alvarado: más de 28 años en la industria de la belleza, fundadora y CEO de Alvarado's Beauty & Barber desde 2011. Creadora del Sistema IMPERIAL y voz de referencia en emprendimiento femenino en Latinoamérica.",
   keywords: ["Karina Alvarado historia", "biografía", "trayectoria profesional belleza"],
   openGraph: {
     title: "Sobre mí | Karina Alvarado",
