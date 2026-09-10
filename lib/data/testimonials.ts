@@ -51,35 +51,9 @@ export const testimonials = [
 
 export const pressLogos: { name: string; logo: string }[] = [];
 
-export const speakingEvents = [
-  {
-    event: "Beauty Business Summit CDMX",
-    year: "2024",
-    topic: "El Futuro de los Negocios de Belleza en LATAM",
-    attendees: "2,500+",
-  },
-  {
-    event: "Entrepreneur Latinoamérica Conference",
-    year: "2024",
-    topic: "De Artista a CEO: El Camino de las Emprendedoras de Belleza",
-    attendees: "1,800+",
-  },
-  {
-    event: "Expo Beauty Argentina",
-    year: "2023",
-    topic: "Marketing Digital para Salones de Belleza",
-    attendees: "3,200+",
-  },
-  {
-    event: "L'Oréal Business Forum",
-    year: "2023",
-    topic: "Liderazgo Femenino en la Industria de la Belleza",
-    attendees: "900+",
-  },
-  {
-    event: "TEDx Bogotá",
-    year: "2022",
-    topic: "La Economía Invisible de la Belleza",
-    attendees: "1,200+",
-  },
-];
+export const speakingEvents: {
+  event: string;
+  year: string;
+  topic: string;
+  attendees: string;
+}[] = [];

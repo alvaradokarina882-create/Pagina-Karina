@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { personal } from "@/lib/data/personal";
-import { speakingEvents } from "@/lib/data/testimonials";
 
 const baseUrl = personal.siteUrl;
 
@@ -47,8 +46,8 @@ const timeline = [
   { year: "2016", event: "Primer año de rentabilidad real. Inicio de la mentoría informal a otras profesionales" },
   { year: "2018", event: "Primer programa de formación empresarial para el sector belleza" },
   { year: "2020", event: "Expansión digital: formación online, comunidad y contenido. +1,000 alumnas" },
-  { year: "2022", event: "TEDx Bogotá. Reconocida como voz líder en belleza y negocios en LATAM" },
-  { year: "2024", event: "5,000+ mujeres formadas en 20+ países. Libro en proceso" },
+  { year: "2022", event: "Reconocida como voz líder en belleza y negocios en LATAM" },
+  { year: "2024", event: "Miles de mujeres formadas en toda Latinoamérica. Libro en proceso" },
   { year: "2026", event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Nuevo programa IMPERIAL" },
 ];
 
@@ -179,28 +178,6 @@ export default function SobreMiPage() {
         </div>
       </section>
 
-      {/* Speaking */}
-      <section className="py-20 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold mb-8">
-            Eventos recientes
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {speakingEvents.map((event) => (
-              <div key={event.event} className="card-premium p-5">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="text-xs border border-[#1e1e1e] px-2 py-0.5 rounded text-[#404040]">
-                    {event.year}
-                  </div>
-                  <div className="text-xs text-[#d4a017]">{event.attendees} asist.</div>
-                </div>
-                <h3 className="font-semibold text-white text-sm mb-2">{event.event}</h3>
-                <p className="text-xs text-[#606060]">{event.topic}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

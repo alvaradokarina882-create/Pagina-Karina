@@ -65,9 +65,6 @@ export const personal = {
   socialLinks: {
     instagram: "https://instagram.com/Karina.alvarados",
     facebook: "https://www.facebook.com/share/18phAj6e5i/?mibextid=wwXIfr",
-    youtube: "https://youtube.com/@karinalvarado",
-    tiktok: "https://tiktok.com/@karinalvarado",
-    linkedin: "https://linkedin.com/in/karinalvarado",
   },
   contact: {
     email: "hola@karinaalvarado.com",

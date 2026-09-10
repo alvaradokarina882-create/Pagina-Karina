@@ -134,8 +134,6 @@ export function ContactSection() {
                 {[
                   { label: "Instagram", href: personal.socialLinks.instagram },
                   { label: "Facebook", href: personal.socialLinks.facebook },
-                  { label: "TikTok", href: personal.socialLinks.tiktok },
-                  { label: "YouTube", href: personal.socialLinks.youtube },
                 ].map((social) => (
                   <a
                     key={social.label}

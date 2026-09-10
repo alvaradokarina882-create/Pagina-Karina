@@ -46,8 +46,6 @@ export function Footer() {
               {[
                 { href: personal.socialLinks.instagram, icon: "IG", label: "Instagram" },
                 { href: personal.socialLinks.facebook, icon: "FB", label: "Facebook" },
-                { href: personal.socialLinks.tiktok, icon: "TK", label: "TikTok" },
-                { href: personal.socialLinks.youtube, icon: "YT", label: "YouTube" },
               ].map((social) => (
                 <a
                   key={social.label}

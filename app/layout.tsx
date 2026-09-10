@@ -75,8 +75,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Karina.alvarados",
-    creator: "@Karina.alvarados",
     title: "Karina Alvarado | Empresaria, Autora & Líder Visionaria",
     description:
       "Empresaria y líder visionaria. Ayuda a mujeres a construir negocios con propósito, estructura y dirección.",
@@ -124,8 +122,6 @@ const jsonLd = {
       sameAs: [
         personal.socialLinks.instagram,
         personal.socialLinks.facebook,
-        personal.socialLinks.youtube,
-        personal.socialLinks.tiktok,
       ],
       jobTitle: "Empresaria, Autora y Líder Visionaria",
       knowsAbout: [

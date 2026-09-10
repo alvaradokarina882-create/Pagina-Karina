@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { personal } from "@/lib/data/personal";
-import { speakingEvents } from "@/lib/data/testimonials";
 
 const baseUrl = personal.siteUrl;
 
@@ -186,27 +185,6 @@ export default function ConferenciasPage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 bg-[#0a0a0a] border-y border-[#1e1e1e]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { value: "50+", label: "Eventos al año" },
-              { value: "20+", label: "Países" },
-              { value: "200K+", label: "Asistentes totales" },
-              { value: "★ 4.9", label: "Calificación promedio" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="font-serif text-4xl font-bold text-gold-gradient mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-[#606060] uppercase tracking-wide">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Topics */}
       <section id="temas" className="py-20 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -262,29 +240,6 @@ export default function ConferenciasPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Past events */}
-      <section className="py-20 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold mb-12">
-            Eventos recientes
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {speakingEvents.map((event) => (
-              <div key={event.event} className="card-premium p-5">
-                <div className="flex justify-between items-start mb-3">
-                  <span className="text-xs border border-[#1e1e1e] px-2 py-0.5 rounded text-[#404040]">
-                    {event.year}
-                  </span>
-                  <span className="text-xs text-[#d4a017]">{event.attendees}</span>
-                </div>
-                <h3 className="font-semibold text-white text-sm mb-1">{event.event}</h3>
-                <p className="text-xs text-[#606060]">{event.topic}</p>
               </div>
             ))}
           </div>
