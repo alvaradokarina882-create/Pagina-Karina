@@ -8,6 +8,8 @@ export function TestimonialsSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
+  if (testimonials.length === 0) return null;
+
   return (
     <section id="testimonios" className="py-24 lg:py-32 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -25,10 +27,6 @@ export function TestimonialsSection() {
             Lo que dicen las{" "}
             <span className="text-gold-gradient">emprendedoras</span>
           </h2>
-          <p className="text-[#a8a8a8] max-w-xl mx-auto">
-            Más de 5,000 profesionales han transformado sus negocios con el
-            método Karina Alvarado.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -8,7 +8,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Karina Alvarado | Beauty & Business Entrepreneur, Author & Speaker",
   description:
-    "Karina Alvarado: entrepreneur, author, and international speaker at the intersection of beauty and business. She has transformed 5,000+ beauty professionals into successful entrepreneurs in 20+ countries.",
+    "Karina Alvarado: entrepreneur, author, and international speaker at the intersection of beauty and business. Creator of the IMPERIAL System and leading voice in female entrepreneurship across Latin America.",
   alternates: {
     canonical: `${baseUrl}/en`,
     languages: {
@@ -99,18 +99,13 @@ export default function EnglishHomePage() {
       <section className="py-16 border-y border-[#1e1e1e]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { value: "15+", label: "Years in the industry" },
-              { value: "5K+", label: "Women trained" },
-              { value: "20+", label: "Countries reached" },
-              { value: "1", label: "Book (coming soon)" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
+            {personal.stats.map((stat) => (
+              <div key={stat.labelEn} className="text-center">
                 <div className="font-serif text-5xl font-bold text-gold-gradient mb-2">
                   {stat.value}
                 </div>
                 <div className="text-xs text-[#606060] uppercase tracking-wider">
-                  {stat.label}
+                  {stat.labelEn}
                 </div>
               </div>
             ))}

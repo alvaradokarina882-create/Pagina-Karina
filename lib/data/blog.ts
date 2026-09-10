@@ -540,7 +540,7 @@ Una tasa saludable para salones de belleza es 60-75%. Si estás por debajo del 5
     content: `
 ## El enemigo que nadie menciona
 
-Después de 15 años en la industria de la belleza y haber mentorado a miles de emprendedoras, puedo decirte con certeza cuál es el error más costoso.
+Después de más de una década en la industria de la belleza y haber acompañado a miles de emprendedoras, puedo decirte con certeza cuál es el error más costoso.
 
 No es cobrar poco (aunque es un problema grave).
 No es no tener presencia en redes (también importante).

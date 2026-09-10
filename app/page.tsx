@@ -16,7 +16,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Karina Alvarado | Emprendedora, Autora & Conferencista en Belleza y Negocios",
   description:
-    "Karina Alvarado: La referente latinoamericana en belleza y negocios. Autora, conferencista y mentora que ha transformado a más de 5,000 profesionales de la belleza en empresarias exitosas.",
+    "Karina Alvarado: empresaria, autora y conferencista internacional en belleza y negocios. Creadora del Sistema IMPERIAL y voz de referencia en emprendimiento femenino en Latinoamérica.",
   alternates: {
     canonical: baseUrl,
   },

@@ -54,9 +54,9 @@ export default function EnPressPage() {
               <div className="card-premium p-6">
                 <p className="text-[#a8a8a8] text-sm leading-relaxed">
                   Karina Alvarado is an entrepreneur, author, and international speaker
-                  specializing in beauty and business. With over 15 years of industry
-                  experience, she has trained 5,000+ women entrepreneurs in 20+ countries,
-                  helping them transform their skills into profitable, sustainable businesses.
+                  specializing in beauty and business. With over a decade in the industry,
+                  she has accompanied women entrepreneurs across Latin America in
+                  transforming their skills into profitable, sustainable businesses.
                 </p>
                 <p className="text-[#a8a8a8] text-sm leading-relaxed mt-3">
                   Creator of the IMPERIAL System and founder of her own business training
@@ -72,9 +72,7 @@ export default function EnPressPage() {
                 {[
                   { label: "Full name", value: "Karina Alvarado" },
                   { label: "Specialty", value: "Beauty & Business" },
-                  { label: "Years of experience", value: "15+" },
-                  { label: "Professionals trained", value: "5,000+" },
-                  { label: "Countries", value: "20+" },
+                  { label: "In the industry since", value: "2009" },
                   { label: "Languages", value: "Spanish, English" },
                   { label: "Press email", value: personal.contact.press },
                 ].map((item) => (

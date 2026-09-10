@@ -37,9 +37,9 @@ export function SpeakingSection() {
               <span className="text-gold-gradient">inspiran acción</span>
             </h2>
             <p className="text-[#a8a8a8] leading-relaxed mb-8">
-              Karina ha llevado su mensaje a más de 20 países, transformando auditorios de
-              emprendedoras en movimientos de acción. Sus conferencias combinan datos
-              reales, historias poderosas y estrategias inmediatamente aplicables.
+              Karina lleva su mensaje a auditorios de emprendedoras en Latinoamérica y
+              Estados Unidos. Sus conferencias combinan datos reales, historias poderosas
+              y estrategias inmediatamente aplicables.
             </p>
 
             {/* Topics */}

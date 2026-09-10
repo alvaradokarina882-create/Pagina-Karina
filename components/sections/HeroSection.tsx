@@ -94,15 +94,13 @@ export function HeroSection() {
                 </div>
               ))}
             </div>
-            <span>+5,000 emprendedoras transformadas</span>
+            <span>Emprendedoras formadas</span>
           </div>
           <div className="hidden sm:block w-px h-4 bg-[#1e1e1e]" />
           <div className="flex items-center gap-1.5">
             <span className="text-[#f9d423]">★★★★★</span>
             <span>Conferencista internacional</span>
           </div>
-          <div className="hidden sm:block w-px h-4 bg-[#1e1e1e]" />
-          <div>20+ países de impacto</div>
         </motion.div>
       </div>
 

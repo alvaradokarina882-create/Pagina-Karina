@@ -276,8 +276,8 @@ export default async function BlogPostPage({
               <div className="font-semibold text-white mb-1">Karina Alvarado</div>
               <p className="text-xs text-[#606060] leading-relaxed">
                 Emprendedora, autora y conferencista especializada en belleza y negocios.
-                Con más de 15 años de experiencia, ha transformado a más de 5,000
-                profesionales de la belleza en empresarias exitosas.
+                Creadora del Sistema IMPERIAL y voz de referencia en el emprendimiento
+                femenino en Latinoamérica.
               </p>
               <Link href="/sobre-mi" className="text-xs text-[#d4a017] mt-2 inline-block hover:text-[#f9d423]">
                 Conocer más →

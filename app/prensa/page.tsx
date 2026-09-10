@@ -79,10 +79,10 @@ export default function PrensaPage() {
               <div className="card-premium p-6">
                 <p className="text-[#a8a8a8] text-sm leading-relaxed">
                   Karina Alvarado es empresaria, autora y conferencista internacional
-                  especializada en la intersección de belleza y negocios. Con más de 15 años
-                  de experiencia en la industria, ha formado a más de 5,000 mujeres
-                  emprendedoras en más de 20 países, ayudándolas a transformar sus
-                  habilidades en negocios rentables y sostenibles.
+                  especializada en la intersección de belleza y negocios. Con más de una
+                  década en la industria, ha acompañado a mujeres emprendedoras en
+                  Latinoamérica para transformar sus habilidades en negocios rentables
+                  y sostenibles.
                 </p>
                 <p className="text-[#a8a8a8] text-sm leading-relaxed mt-3">
                   Creadora del Sistema IMPERIAL y fundadora de su propio ecosistema de
@@ -100,9 +100,7 @@ export default function PrensaPage() {
                 {[
                   { label: "Nombre completo", value: "Karina Alvarado" },
                   { label: "Especialidad", value: "Belleza & Negocios" },
-                  { label: "Años de trayectoria", value: "15+" },
-                  { label: "Profesionales formadas", value: "5,000+" },
-                  { label: "Países de impacto", value: "20+" },
+                  { label: "En la industria desde", value: "2009" },
                   { label: "Idiomas", value: "Español, Inglés" },
                   { label: "Disponibilidad", value: "Toda LATAM + USA" },
                   { label: "Email de prensa", value: personal.contact.press },

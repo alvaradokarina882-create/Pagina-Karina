@@ -57,9 +57,7 @@ export const personal = {
     },
   ],
   stats: [
-    { value: "15+", label: "Años en la industria", labelEn: "Years in the industry" },
-    { value: "5K+", label: "Mujeres formadas", labelEn: "Women trained" },
-    { value: "20+", label: "Países de impacto", labelEn: "Countries reached" },
+    { value: "2009", label: "Inicio en la industria", labelEn: "In the industry since" },
     { value: "1", label: "Libro (próximamente)", labelEn: "Book (coming soon)" },
   ],
   socialLinks: {

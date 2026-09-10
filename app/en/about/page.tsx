@@ -7,7 +7,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "About Karina Alvarado | Beauty & Business Entrepreneur",
   description:
-    "Learn about Karina Alvarado's journey from beauty professional to entrepreneur, author, and international speaker who has trained 5,000+ women across 20+ countries.",
+    "Learn about Karina Alvarado's journey from beauty professional to entrepreneur, author, and international speaker. Creator of the IMPERIAL System and leading voice in female entrepreneurship across Latin America.",
   openGraph: {
     locale: "en_US",
     title: "About | Karina Alvarado",

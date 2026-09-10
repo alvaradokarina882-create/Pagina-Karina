@@ -7,7 +7,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Sobre mí — Mi Historia y Trayectoria",
   description:
-    "Conoce la historia de Karina Alvarado: de profesional de la belleza a emprendedora, autora y conferencista que ha transformado a más de 5,000 mujeres en empresarias exitosas en Latinoamérica.",
+    "Conoce la historia de Karina Alvarado: de profesional de la belleza a emprendedora, autora y conferencista. Creadora del Sistema IMPERIAL y voz de referencia en emprendimiento femenino en Latinoamérica.",
   keywords: ["Karina Alvarado historia", "biografía", "trayectoria profesional belleza"],
   openGraph: {
     title: "Sobre mí | Karina Alvarado",
@@ -45,7 +45,7 @@ const timeline = [
   { year: "2014", event: "Apertura del primer espacio propio. Primeras lecciones (duras) sobre negocios" },
   { year: "2016", event: "Primer año de rentabilidad real. Inicio de la mentoría informal a otras profesionales" },
   { year: "2018", event: "Primer programa de formación empresarial para el sector belleza" },
-  { year: "2020", event: "Expansión digital: formación online, comunidad y contenido. +1,000 alumnas" },
+  { year: "2020", event: "Expansión digital: formación online, comunidad y contenido para emprendedoras" },
   { year: "2022", event: "Reconocida como voz líder en belleza y negocios en LATAM" },
   { year: "2024", event: "Miles de mujeres formadas en toda Latinoamérica. Libro en proceso" },
   { year: "2026", event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Nuevo programa IMPERIAL" },
