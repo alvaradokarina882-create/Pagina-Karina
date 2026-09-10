@@ -106,7 +106,7 @@ export default function LibrosPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
                 </div>
                 <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                  <span>PRE<br />ORDEN</span>
+                  <span>PRÓX.</span>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function LibrosPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
-                <span className="text-xs text-[#d4a017]">Próximamente 2026</span>
+                <span className="text-xs text-[#d4a017]">Próximamente</span>
               </div>
 
               <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">
@@ -149,23 +149,8 @@ export default function LibrosPage() {
                 </div>
               </div>
 
-              {/* Bonuses */}
-              <div className="card-premium p-5 mb-8">
-                <h3 className="text-sm font-semibold text-[#d4a017] mb-3">
-                  Bonificaciones exclusivas de pre-orden:
-                </h3>
-                <ul className="space-y-2">
-                  {book.bonuses.map((bonus) => (
-                    <li key={bonus} className="flex items-start gap-2 text-sm text-[#a8a8a8]">
-                      <span className="text-[#d4a017] mt-0.5 text-xs">✓</span>
-                      {bonus}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
               <Link href={`/libros/${book.slug}`} className="btn-gold px-8 py-4 text-sm font-bold inline-block w-full text-center">
-                Registrarme para la pre-orden →
+                Recibir novedades del libro →
               </Link>
             </div>
           </div>

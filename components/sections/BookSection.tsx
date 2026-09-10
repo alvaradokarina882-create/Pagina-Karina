@@ -50,7 +50,7 @@ export function BookSection() {
 
               {/* Coming soon badge */}
               <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                <span>PRÓX.<br />2026</span>
+                <span>PRÓX.</span>
               </div>
             </div>
           </motion.div>
@@ -75,29 +75,14 @@ export function BookSection() {
             </p>
 
             {/* Publisher badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1e1e1e] mb-6">
-              <span className="text-xs text-[#404040]">Publicado por</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1e1e1e] mb-8">
+              <span className="text-xs text-[#404040]">Editorial</span>
               <span className="text-xs font-semibold text-[#d4a017]">{book.publisher}</span>
-            </div>
-
-            {/* Bonuses teaser */}
-            <div className="card-premium p-5 mb-8">
-              <h3 className="text-sm font-semibold text-[#d4a017] mb-3 uppercase tracking-wider">
-                Bonificaciones para pre-orden:
-              </h3>
-              <ul className="space-y-2">
-                {book.bonuses.slice(0, 3).map((bonus) => (
-                  <li key={bonus} className="flex items-start gap-2 text-sm text-[#a8a8a8]">
-                    <span className="text-[#d4a017] mt-0.5">✓</span>
-                    <span>{bonus}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href={`/libros/${book.slug}`} className="btn-gold px-6 py-3 text-sm font-bold text-center">
-                Registrarme para pre-orden
+                Recibir novedades del libro
               </Link>
               <Link href="/libros" className="btn-ghost-gold px-6 py-3 text-sm text-center">
                 Más detalles →

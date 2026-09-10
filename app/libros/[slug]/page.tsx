@@ -107,7 +107,7 @@ export default async function BookPage({
                 </div>
                 {book.status === "coming-soon" && (
                   <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                    <span>PRE<br />ORDEN</span>
+                    <span>PRÓX.</span>
                   </div>
                 )}
               </div>
@@ -143,25 +143,10 @@ export default async function BookPage({
                 ))}
               </div>
 
-              {/* Bonuses */}
-              <div className="card-premium p-6 mb-8">
-                <h3 className="text-sm font-semibold text-[#d4a017] uppercase tracking-wider mb-4">
-                  Bonificaciones exclusivas
-                </h3>
-                <ul className="space-y-3">
-                  {book.bonuses.map((bonus) => (
-                    <li key={bonus} className="flex items-start gap-3 text-sm text-[#a8a8a8]">
-                      <span className="text-[#d4a017] mt-0.5">✓</span>
-                      {bonus}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Pre-order form */}
+              {/* Notification form */}
               <div className="card-premium p-6">
                 <h3 className="font-semibold text-white mb-4">
-                  Regístrate para la pre-orden
+                  Recibe novedades del libro
                 </h3>
                 <NewsletterForm
                   buttonLabel="Notificarme cuando esté disponible"

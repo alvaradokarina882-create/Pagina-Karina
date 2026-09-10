@@ -87,7 +87,7 @@ export default function EnBooksPage() {
                   </div>
                 </div>
                 <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                  <span>NOTIFY<br/>ME</span>
+                  <span>SOON</span>
                 </div>
               </div>
             </div>
@@ -118,18 +118,6 @@ export default function EnBooksPage() {
                     <span className="text-[#a8a8a8]">{ch}</span>
                   </div>
                 ))}
-              </div>
-
-              <div className="card-premium p-5 mb-6">
-                <h3 className="text-sm font-semibold text-[#d4a017] mb-3">Launch bonuses:</h3>
-                <ul className="space-y-2">
-                  {book.bonuses.map((bonus) => (
-                    <li key={bonus} className="flex items-start gap-2 text-sm text-[#a8a8a8]">
-                      <span className="text-[#d4a017] mt-0.5">✓</span>
-                      {bonus}
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               <NewsletterForm

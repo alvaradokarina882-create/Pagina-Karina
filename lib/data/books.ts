@@ -28,11 +28,5 @@ export const books = [
     publisher: "Legacy",
     language: "Español",
     preorderLink: "#preorder",
-    bonuses: [
-      "Acceso anticipado al primer capítulo en PDF",
-      "Guía de trabajo: Define tu identidad empresarial en 7 días",
-      "Masterclass en vivo con Karina Alvarado al lanzamiento",
-      "Comunidad privada de lectoras: De Cero a Sistema",
-    ],
   },
 ];
