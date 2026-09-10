@@ -50,7 +50,7 @@ const timeline = [
   },
   {
     year: "2026",
-    event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Lanzamiento del programa IMPERIAL.",
+    event: "Libro 'De Cero a Hacer Mi Propio Sistema' en desarrollo (Editorial Legacy). Lanzamiento del programa IMPERIAL.",
   },
 ];
 

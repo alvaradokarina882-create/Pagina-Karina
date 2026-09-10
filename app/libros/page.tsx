@@ -9,7 +9,7 @@ const baseUrl = personal.siteUrl;
 export const metadata: Metadata = {
   title: "Libros — De Cero a Hacer Mi Propio Sistema",
   description:
-    "Descubre el libro de Karina Alvarado: 'De Cero a Hacer Mi Propio Sistema' — el camino para diseñar una marca con carácter, estructura y dirección. Publicado por Legacy.",
+    "Descubre el próximo libro de Karina Alvarado: 'De Cero a Hacer Mi Propio Sistema' — el camino para diseñar una marca con carácter, estructura y dirección. Próximamente por Editorial Legacy.",
   keywords: [
     "Karina Alvarado libros",
     "De Cero a Hacer Mi Propio Sistema",

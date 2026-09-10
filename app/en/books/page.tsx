@@ -7,9 +7,9 @@ import { NewsletterForm } from "@/components/NewsletterForm";
 const baseUrl = personal.siteUrl;
 
 export const metadata: Metadata = {
-  title: "Books — Beauty That Thrives | Karina Alvarado",
+  title: "Books — De Cero a Hacer Mi Propio Sistema | Karina Alvarado",
   description:
-    "Karina Alvarado's upcoming book 'Beauty That Thrives' — the definitive manual for building a profitable and sustainable beauty business. Pre-register for exclusive bonuses.",
+    "Karina Alvarado's upcoming book 'De Cero a Hacer Mi Propio Sistema' — a roadmap for women entrepreneurs to build a business with purpose, structure, and direction. Register to be notified at launch.",
   openGraph: {
     locale: "en_US",
     title: "Books | Karina Alvarado",
@@ -39,9 +39,9 @@ const jsonLd = {
     },
     {
       "@type": "Book",
-      name: books[0].titleEn,
+      name: books[0].title,
       author: { "@type": "Person", name: "Karina Alvarado" },
-      description: books[0].descriptionEn,
+      description: books[0].description,
       inLanguage: "es-MX",
       numberOfPages: books[0].pages,
     },
@@ -80,14 +80,14 @@ export default function EnBooksPage() {
                 >
                   <div className="flex flex-col items-center justify-center h-full p-8 text-center">
                     <div className="text-[#d4a017] text-2xl mb-4">✦</div>
-                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-4">Coming 2026</div>
-                    <h2 className="font-serif text-2xl font-bold text-white mb-3">{book.titleEn}</h2>
+                    <div className="text-xs uppercase tracking-widest text-[#d4a017]/60 mb-4">Coming Soon</div>
+                    <h2 className="font-serif text-2xl font-bold text-white mb-3">{book.title}</h2>
                     <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#d4a017] to-transparent mb-3" />
                     <p className="text-xs text-[#606060]">Karina Alvarado</p>
                   </div>
                 </div>
                 <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#f9d423] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
-                  <span>PRE<br/>ORDER</span>
+                  <span>NOTIFY<br/>ME</span>
                 </div>
               </div>
             </div>
@@ -96,13 +96,13 @@ export default function EnBooksPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
-                <span className="text-xs text-[#d4a017]">Coming 2026</span>
+                <span className="text-xs text-[#d4a017]">Coming Soon · In Spanish</span>
               </div>
               <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
-                {book.titleEn}
+                {book.title}
               </h1>
-              <p className="text-[#606060] italic mb-6">{book.subtitleEn}</p>
-              {book.longDescriptionEn?.map((para, i) => (
+              <p className="text-[#606060] italic mb-6">{book.subtitle}</p>
+              {book.longDescription.map((para, i) => (
                 <p key={i} className="text-[#a8a8a8] leading-relaxed mb-4">{para}</p>
               ))}
 
@@ -112,7 +112,7 @@ export default function EnBooksPage() {
                 What's inside
               </h3>
               <div className="space-y-2 mb-6">
-                {book.chaptersEn?.slice(0, 5).map((ch, i) => (
+                {book.chapters.slice(0, 5).map((ch, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm">
                     <span className="text-[#d4a017] font-mono text-xs">{String(i + 1).padStart(2, "0")}</span>
                     <span className="text-[#a8a8a8]">{ch}</span>
@@ -121,7 +121,7 @@ export default function EnBooksPage() {
               </div>
 
               <div className="card-premium p-5 mb-6">
-                <h3 className="text-sm font-semibold text-[#d4a017] mb-3">Pre-order bonuses:</h3>
+                <h3 className="text-sm font-semibold text-[#d4a017] mb-3">Launch bonuses:</h3>
                 <ul className="space-y-2">
                   {book.bonuses.map((bonus) => (
                     <li key={bonus} className="flex items-start gap-2 text-sm text-[#a8a8a8]">

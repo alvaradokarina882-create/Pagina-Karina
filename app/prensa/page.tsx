@@ -88,7 +88,7 @@ export default function PrensaPage() {
                   Creadora del Sistema IMPERIAL y fundadora de su propio ecosistema de
                   formación empresarial, Karina es una voz de referencia en el emprendimiento
                   femenino en Latinoamérica. Su primer libro, "De Cero a Hacer Mi Propio
-                  Sistema", se publicará en 2026.
+                  Sistema", se publicará próximamente por Editorial Legacy.
                 </p>
               </div>
             </div>

@@ -2,22 +2,13 @@ export const books = [
   {
     slug: "de-cero-a-hacer-mi-propio-sistema",
     title: "De Cero a Hacer Mi Propio Sistema",
-    titleEn: "From Zero to Building My Own System",
     subtitle: "El camino para diseñar una marca con carácter, estructura y dirección",
-    subtitleEn: "The roadmap to design a brand with character, structure, and direction",
     description:
       "Un libro para mujeres que sienten que nacieron para más, pero están atrapadas entre la intuición y la confusión. En lugar de motivación vacía, entrega un mapa claro: primero ordena tu identidad — propósito, valores, límites y decisión — y después traduce esa claridad en estructura empresarial: oferta, posicionamiento, ventas y ejecución.",
-    descriptionEn:
-      "A book for women who feel they were born for more, but are trapped between intuition and confusion. Instead of empty motivation, it delivers a clear map: first organize your identity — purpose, values, limits, and decisions — then translate that clarity into business structure: offer, positioning, sales, and execution.",
     longDescription: [
       "Es un libro para mujeres que sienten que nacieron para más, pero están atrapadas entre la intuición y la confusión. En lugar de motivación vacía, entrega un mapa claro: primero ordena tu identidad (propósito, valores, límites y decisión), y después traduce esa claridad en estructura empresarial (oferta, posicionamiento, ventas y ejecución).",
       "Una profundidad espiritual con pensamiento ejecutivo para que el lector deje de 'buscarse' eternamente y empiece a construir una vida profesional con dirección y un negocio real que pueda sostenerse en el tiempo.",
       "Hay libros que se leen rápido y se olvidan pronto, y hay otros que obligan al lector a detenerse mínima vez por página. Este pertenece a esa segunda categoría. No es motivación — porque cuando cambia la forma de pensar, cambia el rumbo completo de una historia.",
-    ],
-    longDescriptionEn: [
-      "A book for women who feel they were born for more, but are trapped between intuition and confusion. Instead of empty motivation, it delivers a clear map: first organize your identity (purpose, values, limits, decisions), then translate that clarity into business structure (offer, positioning, sales, execution).",
-      "A spiritual depth combined with executive thinking so that readers stop 'searching for themselves' endlessly and start building a professional life with direction and a real business that can sustain itself over time.",
-      "This isn't motivation — because when the way you think changes, the entire course of your story changes. The decision to read it is already a first step. What you do with what you discover next is up to you.",
     ],
     chapters: [
       "Identidad primero: propósito, valores y quién decides ser",
@@ -29,18 +20,8 @@ export const books = [
       "Ejecución consciente: sistema, disciplina y entorno",
       "Tu negocio como reflejo de quien eres: sostenibilidad real",
     ],
-    chaptersEn: [
-      "Identity first: purpose, values, and who you decide to be",
-      "Automatic mode: why we keep repeating patterns that don't work",
-      "Limits and decision: the two most powerful tools of a leader",
-      "From chaos to structure: design your offer with intention",
-      "Positioning with character: differentiate from the inside out",
-      "Selling from truth: without manipulation, without apology",
-      "Conscious execution: system, discipline, and environment",
-      "Your business as a reflection of who you are: real sustainability",
-    ],
     status: "coming-soon",
-    releaseDate: "2026",
+    releaseDate: "próximamente",
     cover: "/images/book-cover.png",
     isbn: "en proceso",
     pages: 280,
