@@ -40,15 +40,18 @@ const jsonLd = {
 };
 
 const timeline = [
-  { year: "2009", event: "Primer trabajo en la industria de la belleza como asistente en un salón local" },
-  { year: "2011", event: "Especialización en colorimetría avanzada. Primeros clientes propios" },
-  { year: "2014", event: "Apertura del primer espacio propio. Primeras lecciones (duras) sobre negocios" },
-  { year: "2016", event: "Primer año de rentabilidad real. Inicio de la mentoría informal a otras profesionales" },
-  { year: "2018", event: "Primer programa de formación empresarial para el sector belleza" },
-  { year: "2020", event: "Expansión digital: formación online, comunidad y contenido para emprendedoras" },
-  { year: "2022", event: "Reconocida como voz líder en belleza y negocios en LATAM" },
-  { year: "2024", event: "Miles de mujeres formadas en toda Latinoamérica. Libro en proceso" },
-  { year: "2026", event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Nuevo programa IMPERIAL" },
+  {
+    year: "A los 17 años",
+    event: "Obtiene su título de belleza en México. Inicio de una trayectoria de más de 28 años en la industria de la belleza.",
+  },
+  {
+    year: "2011",
+    event: "Fundación de Alvarado's Beauty & Barber. Inicio de más de 15 años construyendo y liderando su propio proyecto empresarial como fundadora y CEO.",
+  },
+  {
+    year: "2026",
+    event: "Publicación de 'De Cero a Hacer Mi Propio Sistema'. Lanzamiento del programa IMPERIAL.",
+  },
 ];
 
 export default function SobreMiPage() {
