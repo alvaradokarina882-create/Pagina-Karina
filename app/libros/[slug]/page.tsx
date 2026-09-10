@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { books } from "@/lib/data/books";
 import { personal } from "@/lib/data/personal";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 const baseUrl = personal.siteUrl;
 
@@ -162,17 +163,12 @@ export default async function BookPage({
                 <h3 className="font-semibold text-white mb-4">
                   Regístrate para la pre-orden
                 </h3>
-                <form className="space-y-4">
-                  <input
-                    type="email"
-                    placeholder="Tu email"
-                    required
-                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50"
-                  />
-                  <button type="submit" className="btn-gold w-full py-3 text-sm font-bold">
-                    Notificarme cuando esté disponible
-                  </button>
-                </form>
+                <NewsletterForm
+                  buttonLabel="Notificarme cuando esté disponible"
+                  placeholder="Tu email"
+                  successMessage="¡Listo! Te avisamos cuando el libro esté disponible."
+                  tipo="Pre-orden libro"
+                />
                 <p className="text-xs text-[#404040] mt-3 text-center">
                   Sin spam. Solo te avisamos cuando el libro esté listo.
                 </p>

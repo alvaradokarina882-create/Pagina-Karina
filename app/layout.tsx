@@ -89,9 +89,6 @@ export const metadata: Metadata = {
       "en-US": `${baseUrl}/en`,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
 };
 
 const jsonLd = {

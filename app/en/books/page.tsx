@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { books } from "@/lib/data/books";
 import { personal } from "@/lib/data/personal";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 const baseUrl = personal.siteUrl;
 
@@ -131,17 +132,12 @@ export default function EnBooksPage() {
                 </ul>
               </div>
 
-              <form className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  required
-                  className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50"
-                />
-                <button type="submit" className="btn-gold w-full py-3 text-sm font-bold">
-                  Notify me when available
-                </button>
-              </form>
+              <NewsletterForm
+                buttonLabel="Notify me when available"
+                placeholder="your@email.com"
+                successMessage="Done! We'll notify you when the book is available."
+                tipo="Pre-order book (EN)"
+              />
             </div>
           </div>
         </div>

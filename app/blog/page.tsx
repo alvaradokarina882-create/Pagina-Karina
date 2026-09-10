@@ -3,6 +3,7 @@ import Link from "next/link";
 import { blogPosts, categories } from "@/lib/data/blog";
 import { personal } from "@/lib/data/personal";
 import { formatDate } from "@/lib/utils";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 const baseUrl = personal.siteUrl;
 
@@ -173,17 +174,10 @@ export default function BlogPage() {
               Suscríbete y recibe cada nuevo artículo directamente en tu email.
               Sin spam — solo contenido que transforma tu negocio.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="tu@email.com"
-                required
-                className="flex-1 bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50"
-              />
-              <button type="submit" className="btn-gold px-6 py-3 text-sm font-bold shrink-0">
-                Suscribirme
-              </button>
-            </form>
+            <NewsletterForm
+              tipo="Newsletter"
+              successMessage="¡Listo! Te enviaremos cada nuevo artículo."
+            />
           </div>
         </div>
       </section>
