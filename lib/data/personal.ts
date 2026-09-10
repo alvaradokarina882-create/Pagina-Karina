@@ -70,10 +70,10 @@ export const personal = {
     linkedin: "https://linkedin.com/in/karinalvarado",
   },
   contact: {
-    email: "hola@karinalvarado.com",
-    emailEn: "hello@karinalvarado.com",
-    booking: "booking@karinalvarado.com",
-    press: "prensa@karinalvarado.com",
+    email: "hola@karinaalvarado.com",
+    emailEn: "hello@karinaalvarado.com",
+    booking: "booking@karinaalvarado.com",
+    press: "prensa@karinaalvarado.com",
   },
   siteUrl: "https://soykarinaalvarado.com",
 };

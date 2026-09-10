@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { personal } from "@/lib/data/personal";
-import { pressLogos } from "@/lib/data/testimonials";
 
 const baseUrl = personal.siteUrl;
 
 export const metadata: Metadata = {
   title: "Press — Media Kit & Resources | Karina Alvarado",
   description:
-    "Official press kit for Karina Alvarado. Biographies, high-resolution photos, media coverage in Forbes, Entrepreneur, Vogue, and more. Press contact for interviews.",
+    "Official press kit for Karina Alvarado: biography, high-resolution photos, and press contact for interviews and media collaborations.",
   openGraph: {
     locale: "en_US",
     title: "Press | Karina Alvarado",
@@ -46,18 +45,7 @@ export default function EnPressPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#0a0a0a] border-y border-[#1e1e1e]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-xs uppercase tracking-widest text-[#404040] mb-10">Featured in</p>
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
-            {pressLogos.map((press) => (
-              <div key={press.name} className="text-[#303030] text-lg font-serif font-bold">{press.name}</div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#050505]">
+      <section className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold mb-8">Official biography</h2>
           <div className="grid lg:grid-cols-2 gap-12">
@@ -67,14 +55,14 @@ export default function EnPressPage() {
                 <p className="text-[#a8a8a8] text-sm leading-relaxed">
                   Karina Alvarado is an entrepreneur, author, and international speaker
                   specializing in beauty and business. With over 15 years of industry
-                  experience, she has trained 5,000+ professionals in 20+ countries,
+                  experience, she has trained 5,000+ women entrepreneurs in 20+ countries,
                   helping them transform their skills into profitable, sustainable businesses.
                 </p>
                 <p className="text-[#a8a8a8] text-sm leading-relaxed mt-3">
-                  Named by Forbes México among the 30 Most Influential Women in
-                  Entrepreneurship 2024, she is a speaker at TEDx, L'Oréal Business Forum,
-                  and Entrepreneur Latin America Conference. Her first book,
-                  "De Cero a Hacer Mi Propio Sistema," will be published in 2026.
+                  Creator of the IMPERIAL System and founder of her own business training
+                  ecosystem, Karina is a leading voice in female entrepreneurship across
+                  Latin America. Her first book, "De Cero a Hacer Mi Propio Sistema,"
+                  will be published in 2026.
                 </p>
               </div>
             </div>

@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { personal } from "@/lib/data/personal";
-import { pressLogos } from "@/lib/data/testimonials";
 
 const baseUrl = personal.siteUrl;
 
 export const metadata: Metadata = {
-  title: "Prensa — Cobertura Mediática y Recursos para Periodistas",
+  title: "Prensa — Kit de Prensa y Recursos para Periodistas",
   description:
-    "Recursos de prensa de Karina Alvarado: biografía oficial, fotos de alta resolución, cobertura mediática en Forbes, Entrepreneur, Vogue y más. Contacto para entrevistas y colaboraciones.",
-  keywords: ["Karina Alvarado prensa", "kit de prensa", "entrevistas", "medios belleza"],
+    "Kit de prensa oficial de Karina Alvarado: biografía, foto de alta resolución y contacto para entrevistas, colaboraciones y cobertura mediática.",
+  keywords: ["Karina Alvarado prensa", "kit de prensa", "entrevistas", "conferencista belleza negocios"],
   openGraph: {
     title: "Prensa | Karina Alvarado",
     description: "Kit de prensa oficial y recursos mediáticos de Karina Alvarado.",
@@ -17,57 +16,6 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: `${baseUrl}/prensa` },
 };
-
-const pressFeatures = [
-  {
-    media: "Forbes México",
-    title: "Las 30 Mujeres más Influyentes en Emprendimiento 2024",
-    type: "Reconocimiento",
-    year: "2024",
-    excerpt:
-      "Karina Alvarado es reconocida por su impacto en la transformación de la industria de la belleza en Latinoamérica, formando a más de 5,000 empresarias.",
-  },
-  {
-    media: "Entrepreneur en Español",
-    title: "El Método que Está Revolucionando los Negocios de Belleza",
-    type: "Feature",
-    year: "2024",
-    excerpt:
-      "Una extensa entrevista sobre el Sistema IMPERIAL y cómo está cambiando la manera en que las profesionales de belleza construyen sus negocios.",
-  },
-  {
-    media: "Vogue México",
-    title: "Belleza que Trasciende: Negocios con Propósito",
-    type: "Entrevista",
-    year: "2023",
-    excerpt:
-      "Conversación sobre la intersección de belleza, propósito y negocios, y cómo Karina está construyendo la próxima generación de empresarias de belleza.",
-  },
-  {
-    media: "Elle",
-    title: "Las Voces que Están Definiendo el Futuro de la Belleza",
-    type: "Feature",
-    year: "2023",
-    excerpt:
-      "Karina Alvarado entre las 10 líderes de opinión más influyentes en la industria de la belleza en habla hispana.",
-  },
-  {
-    media: "Glamour",
-    title: "De Estilista a Empresaria: La Historia de Karina Alvarado",
-    type: "Perfil",
-    year: "2022",
-    excerpt:
-      "Un perfil profundo sobre el camino de Karina desde sus inicios en la industria hasta convertirse en la mentora de negocios más buscada del sector belleza.",
-  },
-  {
-    media: "L'Oréal Business Forum",
-    title: "Keynote: Liderazgo Femenino en la Industria de la Belleza",
-    type: "Evento",
-    year: "2023",
-    excerpt:
-      "Karina Alvarado como speaker principal del evento anual de L'Oréal para profesionales de la belleza en América Latina.",
-  },
-];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -117,24 +65,8 @@ export default function PrensaPage() {
         </div>
       </section>
 
-      {/* Press logos */}
-      <section className="py-16 bg-[#0a0a0a] border-y border-[#1e1e1e]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <p className="text-center text-xs uppercase tracking-widest text-[#404040] mb-10">
-            Destacada en
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
-            {pressLogos.map((press) => (
-              <div key={press.name} className="text-[#303030] text-lg font-serif font-bold tracking-wide">
-                {press.name}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Bio oficial */}
-      <section className="py-20 bg-[#050505]">
+      <section className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold mb-8">
             Biografía oficial
@@ -146,17 +78,17 @@ export default function PrensaPage() {
               </h3>
               <div className="card-premium p-6">
                 <p className="text-[#a8a8a8] text-sm leading-relaxed">
-                  Karina Alvarado es emprendedora, autora y conferencista internacional
+                  Karina Alvarado es empresaria, autora y conferencista internacional
                   especializada en la intersección de belleza y negocios. Con más de 15 años
-                  de experiencia en la industria de la belleza, ha formado a más de 5,000
-                  profesionales en más de 20 países, ayudándolas a transformar sus
+                  de experiencia en la industria, ha formado a más de 5,000 mujeres
+                  emprendedoras en más de 20 países, ayudándolas a transformar sus
                   habilidades en negocios rentables y sostenibles.
                 </p>
                 <p className="text-[#a8a8a8] text-sm leading-relaxed mt-3">
-                  Reconocida por Forbes México entre las 30 Mujeres más Influyentes en
-                  Emprendimiento 2024, es speaker en eventos de la talla de TEDx, L'Oréal
-                  Business Forum y Entrepreneur Latinoamérica Conference. Su primer libro,
-                  "De Cero a Hacer Mi Propio Sistema", se publicará en 2026.
+                  Creadora del Sistema IMPERIAL y fundadora de su propio ecosistema de
+                  formación empresarial, Karina es una voz de referencia en el emprendimiento
+                  femenino en Latinoamérica. Su primer libro, "De Cero a Hacer Mi Propio
+                  Sistema", se publicará en 2026.
                 </p>
               </div>
             </div>
@@ -186,34 +118,6 @@ export default function PrensaPage() {
         </div>
       </section>
 
-      {/* Press features */}
-      <section className="py-20 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold mb-12">
-            Cobertura y menciones
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pressFeatures.map((feature) => (
-              <div key={feature.title} className="card-premium p-6 flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm font-bold text-white">{feature.media}</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-[#404040]">{feature.year}</span>
-                    <span className="text-xs border border-[#1e1e1e] px-2 py-0.5 rounded text-[#606060]">
-                      {feature.type}
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-sm font-semibold text-[#a8a8a8] mb-3 flex-1">
-                  {feature.title}
-                </h3>
-                <p className="text-xs text-[#606060] leading-relaxed">{feature.excerpt}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Downloads */}
       <section className="py-20 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -222,12 +126,10 @@ export default function PrensaPage() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { title: "Foto oficial 1 (alta res)", format: "JPG — 5MB", type: "Foto" },
-              { title: "Foto oficial 2 (alta res)", format: "JPG — 4.8MB", type: "Foto" },
-              { title: "Foto en evento", format: "JPG — 3.2MB", type: "Foto" },
-              { title: "Biografía larga (ES)", format: "PDF — 50KB", type: "Texto" },
-              { title: "Biografía corta (ES/EN)", format: "PDF — 30KB", type: "Texto" },
-              { title: "Logotipo alta resolución", format: "PNG/SVG — 1MB", type: "Marca" },
+              { title: "Foto oficial (alta res)", format: "JPG", type: "Foto" },
+              { title: "Biografía larga (ES)", format: "PDF", type: "Texto" },
+              { title: "Biografía corta (ES/EN)", format: "PDF", type: "Texto" },
+              { title: "Logotipo alta resolución", format: "PNG/SVG", type: "Marca" },
             ].map((item) => (
               <div key={item.title} className="card-premium p-4 flex items-center gap-4">
                 <div className="w-10 h-10 rounded-lg bg-[#d4a017]/10 border border-[#d4a017]/20 flex items-center justify-center text-xs font-bold text-[#d4a017] shrink-0">
@@ -237,17 +139,15 @@ export default function PrensaPage() {
                   <div className="text-sm text-white font-medium">{item.title}</div>
                   <div className="text-xs text-[#404040]">{item.format}</div>
                 </div>
-                <button className="text-xs text-[#d4a017] hover:text-[#f9d423] transition-colors">
-                  ↓
-                </button>
               </div>
             ))}
           </div>
-          <p className="text-xs text-[#404040] mt-4">
-            Para acceso a materiales de alta resolución, contacta al equipo de prensa en{" "}
+          <p className="text-sm text-[#404040] mt-6">
+            Para acceso a materiales, escribe a{" "}
             <a href={`mailto:${personal.contact.press}`} className="text-[#d4a017]">
               {personal.contact.press}
-            </a>
+            </a>{" "}
+            y te los enviamos directamente.
           </p>
         </div>
       </section>

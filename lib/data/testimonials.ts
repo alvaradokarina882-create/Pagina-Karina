@@ -49,14 +49,7 @@ export const testimonials = [
   },
 ];
 
-export const pressLogos = [
-  { name: "Forbes México", logo: "/images/press/forbes.svg" },
-  { name: "Entrepreneur", logo: "/images/press/entrepreneur.svg" },
-  { name: "Elle", logo: "/images/press/elle.svg" },
-  { name: "Vogue", logo: "/images/press/vogue.svg" },
-  { name: "Glamour", logo: "/images/press/glamour.svg" },
-  { name: "L'Oréal", logo: "/images/press/loreal.svg" },
-];
+export const pressLogos: { name: string; logo: string }[] = [];
 
 export const speakingEvents = [
   {
