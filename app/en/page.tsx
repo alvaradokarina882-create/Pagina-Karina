@@ -155,15 +155,15 @@ export default function EnglishHomePage() {
               The book
             </span>
             <h2 className="font-serif text-4xl font-bold mb-6">
-              <span className="text-gold-gradient">From Zero to Building My Own System</span>
+              <span className="text-gold-gradient">De Cero a Hacer Mi Propio Sistema</span>
             </h2>
             <p className="text-[#a8a8a8] leading-relaxed mb-8">
               The roadmap to design a brand with character, structure, and direction.
-              Published by Legacy. Coming 2026.
+              By Editorial Legacy. Coming soon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/en/books" className="btn-gold px-6 py-3 text-sm font-bold">
-                Pre-register for the book
+                Get notified at launch
               </Link>
               <Link href="/en/about" className="btn-ghost-gold px-6 py-3 text-sm">
                 About Karina →
@@ -174,28 +174,30 @@ export default function EnglishHomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-center mb-12">
-            What entrepreneurs say
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.slice(0, 3).map((t) => (
-              <div key={t.name} className="card-premium p-6">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: t.stars }).map((_, i) => (
-                    <span key={i} className="text-[#f9d423] text-sm">★</span>
-                  ))}
+      {testimonials.length > 0 && (
+        <section className="py-24 bg-[#050505]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-center mb-12">
+              What entrepreneurs say
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {testimonials.slice(0, 3).map((t) => (
+                <div key={t.name} className="card-premium p-6">
+                  <div className="flex gap-1 mb-4">
+                    {Array.from({ length: t.stars }).map((_, i) => (
+                      <span key={i} className="text-[#f9d423] text-sm">★</span>
+                    ))}
+                  </div>
+                  <p className="text-[#a8a8a8] text-sm leading-relaxed mb-4 italic">
+                    &ldquo;{t.text}&rdquo;
+                  </p>
+                  <div className="text-xs font-semibold text-[#d4a017]">{t.result}</div>
                 </div>
-                <p className="text-[#a8a8a8] text-sm leading-relaxed mb-4 italic">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="text-xs font-semibold text-[#d4a017]">{t.result}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Contact CTA */}
       <section className="py-20 bg-[#0a0a0a]">

@@ -11,12 +11,12 @@ export const personal = {
   bio: [
     "Karina Alvarado es empresaria, creadora de sistemas y líder visionaria que transformó su historia personal en una filosofía de crecimiento, estructura y liderazgo consciente.",
     "Su misión es ayudar a mujeres emprendedoras a dejar el modo automático, construir negocios con propósito y liderar desde la fuerza interior, la estrategia y la transformación real.",
-    "Ha formado a miles de mujeres emprendedoras para dejar de improvisar y empezar a construir desde una identidad clara — con estructura empresarial real, propósito definido y sistemas que funcionan sin ellas presentes.",
+    "Ha acompañado a mujeres emprendedoras para dejar de improvisar y empezar a construir desde una identidad clara — con estructura empresarial real, propósito definido y sistemas que funcionan sin ellas presentes.",
   ],
   bioEn: [
     "Karina Alvarado is an entrepreneur, systems creator, and visionary leader who transformed her personal story into a philosophy of growth, structure, and conscious leadership.",
     "Her mission is to help women entrepreneurs leave automatic mode, build businesses with purpose, and lead from inner strength, strategy, and real transformation.",
-    "She has trained thousands of women entrepreneurs to stop improvising and start building from a clear identity — with real business structure, defined purpose, and systems that work without them being present.",
+    "She has guided women entrepreneurs to stop improvising and start building from a clear identity — with real business structure, defined purpose, and systems that work without them being present.",
   ],
   filosofia: [
     {

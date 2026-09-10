@@ -42,7 +42,7 @@ const jsonLd = {
     },
     {
       "@type": "Book",
-      "@id": `${baseUrl}/libros/belleza-que-prospera#book`,
+      "@id": `${baseUrl}/libros/de-cero-a-hacer-mi-propio-sistema#book`,
       name: books[0].title,
       author: { "@type": "Person", name: "Karina Alvarado" },
       description: books[0].description,

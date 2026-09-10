@@ -84,22 +84,13 @@ export function HeroSection() {
           className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-[#606060]"
         >
           <div className="flex items-center gap-2">
-            <div className="flex -space-x-2">
-              {["V", "C", "S", "M", "I"].map((initial, i) => (
-                <div
-                  key={i}
-                  className="w-8 h-8 rounded-full border-2 border-[#0a0a0a] bg-gradient-to-br from-[#d4a017] to-[#92400e] flex items-center justify-center text-white text-xs font-bold"
-                >
-                  {initial}
-                </div>
-              ))}
-            </div>
-            <span>Emprendedoras formadas</span>
+            <span className="text-[#f9d423] font-bold text-base">28+</span>
+            <span>Años en la industria de la belleza</span>
           </div>
           <div className="hidden sm:block w-px h-4 bg-[#1e1e1e]" />
-          <div className="flex items-center gap-1.5">
-            <span className="text-[#f9d423]">★★★★★</span>
-            <span>Conferencista internacional</span>
+          <div className="flex items-center gap-2">
+            <span className="text-[#f9d423] font-bold text-base">15+</span>
+            <span>Años liderando Alvarado's</span>
           </div>
         </motion.div>
       </div>
