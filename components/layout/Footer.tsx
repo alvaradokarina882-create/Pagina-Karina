@@ -87,11 +87,16 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#404040]">
           <p>© {new Date().getFullYear()} Karina Alvarado. Todos los derechos reservados.</p>
-          <div className="flex items-center gap-6">
-            <Link href="/en" className="hover:text-[#606060] transition-colors">
-              English version
+          <div className="flex items-center gap-6 flex-wrap justify-center sm:justify-end">
+            <Link href="/privacidad" className="hover:text-[#606060] transition-colors">
+              Privacidad
             </Link>
-            <span>Hecho con pasión y estrategia</span>
+            <Link href="/terminos" className="hover:text-[#606060] transition-colors">
+              Términos
+            </Link>
+            <Link href="/en" className="hover:text-[#606060] transition-colors">
+              English
+            </Link>
           </div>
         </div>
       </div>
