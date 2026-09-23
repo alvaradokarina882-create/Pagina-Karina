@@ -55,7 +55,7 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
             Conocimiento que transforma
           </span>
           <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
@@ -72,13 +72,13 @@ export default function BlogPage() {
       <section className="py-6 bg-[#0a0a0a] border-b border-[#1e1e1e] sticky top-16 lg:top-20 z-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex gap-3 overflow-x-auto pb-1 no-scrollbar">
-            <button className="shrink-0 px-4 py-1.5 rounded-full bg-[#A98224]/10 border border-[#A98224]/30 text-xs font-medium text-[#A98224]">
+            <button className="shrink-0 px-4 py-1.5 rounded-full bg-[#9A7B2F]/10 border border-[#9A7B2F]/30 text-xs font-medium text-[#9A7B2F]">
               Todos
             </button>
             {categories.map((cat) => (
               <button
                 key={cat}
-                className="shrink-0 px-4 py-1.5 rounded-full border border-[#1e1e1e] text-xs text-[#606060] hover:border-[#A98224]/30 hover:text-[#a8a8a8] transition-colors"
+                className="shrink-0 px-4 py-1.5 rounded-full border border-[#1e1e1e] text-xs text-[#606060] hover:border-[#9A7B2F]/30 hover:text-[#a8a8a8] transition-colors"
               >
                 {cat}
               </button>
@@ -90,7 +90,7 @@ export default function BlogPage() {
       {/* Featured posts */}
       <section className="py-16 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-8">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#9A7B2F] mb-8">
             Destacados
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -101,12 +101,12 @@ export default function BlogPage() {
                 className="card-premium p-6 group flex flex-col hover:no-underline block"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-xs font-medium text-[#A98224] border border-[#A98224]/30 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-medium text-[#9A7B2F] border border-[#9A7B2F]/30 px-2 py-0.5 rounded-full">
                     {post.category}
                   </span>
                   <span className="text-xs text-[#404040]">{post.readTime} min</span>
                 </div>
-                <h3 className="font-serif text-lg font-bold text-white mb-3 leading-snug flex-1 group-hover:text-[#C3A04A] transition-colors">
+                <h3 className="font-serif text-lg font-bold text-white mb-3 leading-snug flex-1 group-hover:text-[#B59A55] transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-[#606060] leading-relaxed mb-4 line-clamp-2">
@@ -116,7 +116,7 @@ export default function BlogPage() {
                   <span className="text-xs text-[#404040]">
                     {formatDate(post.publishedAt)}
                   </span>
-                  <span className="text-xs text-[#A98224] group-hover:translate-x-1 transition-transform inline-block">
+                  <span className="text-xs text-[#9A7B2F] group-hover:translate-x-1 transition-transform inline-block">
                     Leer →
                   </span>
                 </div>
@@ -125,7 +125,7 @@ export default function BlogPage() {
           </div>
 
           {/* All posts */}
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-8">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#9A7B2F] mb-8">
             Todos los artículos
           </h2>
           <div className="space-y-4">
@@ -137,11 +137,11 @@ export default function BlogPage() {
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-xs text-[#A98224]">{post.category}</span>
+                    <span className="text-xs text-[#9A7B2F]">{post.category}</span>
                     <span className="text-[#1e1e1e]">·</span>
                     <span className="text-xs text-[#404040]">{post.readTime} min de lectura</span>
                   </div>
-                  <h3 className="font-semibold text-white mb-1 group-hover:text-[#C3A04A] transition-colors text-sm lg:text-base">
+                  <h3 className="font-semibold text-white mb-1 group-hover:text-[#B59A55] transition-colors text-sm lg:text-base">
                     {post.title}
                   </h3>
                   <p className="text-xs text-[#606060] leading-relaxed hidden sm:block">
@@ -152,7 +152,7 @@ export default function BlogPage() {
                   <span className="text-xs text-[#404040]">
                     {formatDate(post.publishedAt)}
                   </span>
-                  <span className="text-xs text-[#A98224] group-hover:translate-x-1 transition-transform">
+                  <span className="text-xs text-[#9A7B2F] group-hover:translate-x-1 transition-transform">
                     →
                   </span>
                 </div>
@@ -166,7 +166,7 @@ export default function BlogPage() {
       <section className="py-20 bg-[#050505]">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <div className="card-premium p-8">
-            <div className="text-3xl text-[#A98224] mb-4">✦</div>
+            <div className="text-3xl text-[#9A7B2F] mb-4">✦</div>
             <h2 className="font-serif text-2xl font-bold mb-3">
               No te pierdas ningún artículo
             </h2>

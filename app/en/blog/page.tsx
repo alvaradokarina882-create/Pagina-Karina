@@ -32,10 +32,10 @@ export default function EnBlogPage() {
           <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
             <Link href="/en" className="hover:text-[#606060]">Home</Link>
             <span>/</span>
-            <span className="text-[#A98224]">Blog</span>
+            <span className="text-[#9A7B2F]">Blog</span>
           </div>
           <div className="text-center">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
               Knowledge that transforms
             </span>
             <h1 className="font-serif text-5xl font-bold mb-6 text-gold-gradient">Blog</h1>
@@ -52,13 +52,13 @@ export default function EnBlogPage() {
           <div className="card-premium p-4 mb-8 text-center">
             <p className="text-xs text-[#606060]">
               Articles are published in Spanish.{" "}
-              <Link href="/blog" className="text-[#A98224] hover:text-[#C3A04A]">
+              <Link href="/blog" className="text-[#9A7B2F] hover:text-[#B59A55]">
                 View all articles in Spanish →
               </Link>
             </p>
           </div>
 
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-[#9A7B2F] mb-6">
             Featured articles
           </h2>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -69,18 +69,18 @@ export default function EnBlogPage() {
                 className="card-premium p-6 group block hover:no-underline"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-xs font-medium text-[#A98224] border border-[#A98224]/30 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-medium text-[#9A7B2F] border border-[#9A7B2F]/30 px-2 py-0.5 rounded-full">
                     {post.category}
                   </span>
                   <span className="text-xs text-[#404040]">{post.readTime} min</span>
                 </div>
-                <h3 className="font-serif text-base font-bold text-white mb-3 group-hover:text-[#C3A04A] transition-colors">
+                <h3 className="font-serif text-base font-bold text-white mb-3 group-hover:text-[#B59A55] transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-[#606060] leading-relaxed mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
-                <div className="text-xs text-[#A98224] group-hover:translate-x-1 transition-transform inline-block">
+                <div className="text-xs text-[#9A7B2F] group-hover:translate-x-1 transition-transform inline-block">
                   Read (ES) →
                 </div>
               </Link>
@@ -95,8 +95,8 @@ export default function EnBlogPage() {
                 className="card-premium p-4 group flex items-center justify-between hover:no-underline block"
               >
                 <div>
-                  <div className="text-xs text-[#A98224] mb-1">{post.category}</div>
-                  <h3 className="text-sm font-semibold text-white group-hover:text-[#C3A04A] transition-colors">
+                  <div className="text-xs text-[#9A7B2F] mb-1">{post.category}</div>
+                  <h3 className="text-sm font-semibold text-white group-hover:text-[#B59A55] transition-colors">
                     {post.title}
                   </h3>
                 </div>
@@ -104,7 +104,7 @@ export default function EnBlogPage() {
                   <span className="text-xs text-[#404040] hidden sm:block">
                     {formatDate(post.publishedAt)}
                   </span>
-                  <span className="text-xs text-[#A98224] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-xs text-[#9A7B2F] group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </Link>
             ))}

@@ -27,10 +27,10 @@ export default function EnSpeakingPage() {
           <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
             <Link href="/en" className="hover:text-[#606060]">Home</Link>
             <span>/</span>
-            <span className="text-[#A98224]">Speaking</span>
+            <span className="text-[#9A7B2F]">Speaking</span>
           </div>
           <div className="max-w-3xl">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
               International Speaker
             </span>
             <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
@@ -62,7 +62,7 @@ export default function EnSpeakingPage() {
               { icon: "▲", title: "Pricing with Purpose", desc: "The exact method to set prices that reflect real value and build sustainable businesses." },
             ].map((topic) => (
               <div key={topic.title} className="card-premium p-6">
-                <div className="text-2xl text-[#A98224] mb-4">{topic.icon}</div>
+                <div className="text-2xl text-[#9A7B2F] mb-4">{topic.icon}</div>
                 <h3 className="font-serif text-lg font-bold text-white mb-3">{topic.title}</h3>
                 <p className="text-sm text-[#606060] leading-relaxed">{topic.desc}</p>
               </div>

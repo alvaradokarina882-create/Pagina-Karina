@@ -60,7 +60,7 @@ export function EcosistemaSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
             Herramientas para crecer
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-4">
@@ -82,12 +82,12 @@ export function EcosistemaSection() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className={`relative rounded-2xl p-6 flex flex-col border transition-all duration-300 hover:-translate-y-1 ${
                 item.highlight
-                  ? "border-[#A98224]/40 bg-[#141410] glow-gold"
-                  : "border-[#1e1e1e] bg-[#141414] hover:border-[#A98224]/30"
+                  ? "border-[#9A7B2F]/40 bg-[#141410] glow-gold"
+                  : "border-[#1e1e1e] bg-[#141414] hover:border-[#9A7B2F]/30"
               }`}
             >
               {item.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#C3A04A] rounded-full text-black text-xs font-bold">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#B59A55] rounded-full text-black text-xs font-bold">
                   {item.tag}
                 </div>
               )}
@@ -97,7 +97,7 @@ export function EcosistemaSection() {
                 </div>
               )}
 
-              <div className="text-3xl text-[#A98224] mb-4">{item.icon}</div>
+              <div className="text-3xl text-[#9A7B2F] mb-4">{item.icon}</div>
               <h3 className="font-serif text-xl font-bold text-white mb-3">
                 {item.title}
               </h3>

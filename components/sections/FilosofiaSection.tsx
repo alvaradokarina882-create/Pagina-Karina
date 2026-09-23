@@ -19,7 +19,7 @@ export function FilosofiaSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
             Lo que me mueve
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold">
@@ -36,7 +36,7 @@ export function FilosofiaSection() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="card-premium p-6 group hover:translate-y-[-4px] transition-all duration-300"
             >
-              <div className="text-3xl text-[#A98224] mb-4 group-hover:text-[#C3A04A] transition-colors">
+              <div className="text-3xl text-[#9A7B2F] mb-4 group-hover:text-[#B59A55] transition-colors">
                 {item.icon}
               </div>
               <h3 className="font-serif text-lg font-bold text-white mb-3">

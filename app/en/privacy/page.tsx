@@ -21,7 +21,7 @@ export default function EnPrivacyPage() {
         <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
           <Link href="/en" className="hover:text-[#606060]">Home</Link>
           <span>/</span>
-          <span className="text-[#A98224]">Privacy Policy</span>
+          <span className="text-[#9A7B2F]">Privacy Policy</span>
         </div>
 
         <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
@@ -38,7 +38,7 @@ export default function EnPrivacyPage() {
             <p>
               Karina Alvarado, owner of this website (<strong className="text-white">soykarinaalvarado.com</strong>).
               For any privacy-related questions, contact us at{" "}
-              <a href={`mailto:${personal.contact.emailEn}`} className="text-[#A98224]">{personal.contact.emailEn}</a>.
+              <a href={`mailto:${personal.contact.emailEn}`} className="text-[#9A7B2F]">{personal.contact.emailEn}</a>.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function EnPrivacyPage() {
                 "Type of inquiry and message (contact form)",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#A98224] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#9A7B2F] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -72,7 +72,7 @@ export default function EnPrivacyPage() {
                 "To send you the newsletter if you expressly subscribed.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#A98224] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#9A7B2F] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -92,7 +92,7 @@ export default function EnPrivacyPage() {
                 "Resend — transactional email delivery service.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#A98224] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#9A7B2F] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -132,14 +132,14 @@ export default function EnPrivacyPage() {
                 "Withdraw your consent to the newsletter or book notifications.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#A98224] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#9A7B2F] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <p className="mt-3">
               Write to us at{" "}
-              <a href={`mailto:${personal.contact.emailEn}`} className="text-[#A98224]">{personal.contact.emailEn}</a>{" "}
+              <a href={`mailto:${personal.contact.emailEn}`} className="text-[#9A7B2F]">{personal.contact.emailEn}</a>{" "}
               and we will respond within 30 days.
             </p>
           </div>
@@ -156,11 +156,11 @@ export default function EnPrivacyPage() {
 
           <p className="text-xs text-[#404040]">
             Questions?{" "}
-            <a href={`mailto:${personal.contact.emailEn}`} className="text-[#A98224]">{personal.contact.emailEn}</a>
+            <a href={`mailto:${personal.contact.emailEn}`} className="text-[#9A7B2F]">{personal.contact.emailEn}</a>
             {" "}·{" "}
-            <Link href="/en/terms" className="text-[#A98224]">Terms of Use</Link>
+            <Link href="/en/terms" className="text-[#9A7B2F]">Terms of Use</Link>
             {" "}·{" "}
-            <Link href="/privacidad" className="text-[#A98224]">Versión en español</Link>
+            <Link href="/privacidad" className="text-[#9A7B2F]">Versión en español</Link>
           </p>
         </div>
       </div>

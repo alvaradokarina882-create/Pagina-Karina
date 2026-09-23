@@ -64,11 +64,11 @@ export default function SobreMiPage() {
 
       {/* Hero */}
       <section className="pt-32 pb-20 bg-[#050505] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#C3A04A]/3 blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#B59A55]/3 blur-[100px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#A98224]/30 bg-[#A98224]/5 mb-6">
-              <span className="text-xs font-medium text-[#A98224] tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#9A7B2F]/30 bg-[#9A7B2F]/5 mb-6">
+              <span className="text-xs font-medium text-[#9A7B2F] tracking-wide uppercase">
                 Mi historia
               </span>
             </div>
@@ -129,7 +129,7 @@ export default function SobreMiPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {personal.filosofia.map((item) => (
                   <div key={item.title} className="card-premium p-4">
-                    <div className="text-[#A98224] text-xl mb-2">{item.icon}</div>
+                    <div className="text-[#9A7B2F] text-xl mb-2">{item.icon}</div>
                     <h3 className="font-semibold text-white text-sm mb-1">{item.title}</h3>
                     <p className="text-xs text-[#606060] leading-relaxed">{item.description}</p>
                   </div>
@@ -149,7 +149,7 @@ export default function SobreMiPage() {
 
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#A98224]/50 via-[#A98224]/20 to-transparent" />
+            <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#9A7B2F]/50 via-[#9A7B2F]/20 to-transparent" />
 
             <div className="space-y-8">
               {timeline.map((item, i) => (
@@ -162,14 +162,14 @@ export default function SobreMiPage() {
                   {/* Content */}
                   <div className="flex-1 pl-12 lg:pl-0">
                     <div className="card-premium p-5">
-                      <div className="text-[#A98224] font-bold text-sm mb-2">{item.year}</div>
+                      <div className="text-[#9A7B2F] font-bold text-sm mb-2">{item.year}</div>
                       <p className="text-[#a8a8a8] text-sm leading-relaxed">{item.event}</p>
                     </div>
                   </div>
 
                   {/* Dot */}
                   <div className="absolute left-4 lg:static lg:flex-none flex items-center">
-                    <div className="w-3 h-3 rounded-full bg-[#C3A04A] border-2 border-[#0a0a0a] -ml-1.5 lg:ml-0" />
+                    <div className="w-3 h-3 rounded-full bg-[#B59A55] border-2 border-[#0a0a0a] -ml-1.5 lg:ml-0" />
                   </div>
 
                   {/* Spacer for alternating layout */}

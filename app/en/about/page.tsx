@@ -47,10 +47,10 @@ export default function EnAboutPage() {
           <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
             <Link href="/en" className="hover:text-[#606060]">Home</Link>
             <span>/</span>
-            <span className="text-[#A98224]">About</span>
+            <span className="text-[#9A7B2F]">About</span>
           </div>
           <div className="max-w-3xl">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
               My story
             </span>
             <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
@@ -78,7 +78,7 @@ export default function EnAboutPage() {
           <div className="grid sm:grid-cols-2 gap-4 mb-12">
             {personal.filosofia.map((item) => (
               <div key={item.titleEn} className="card-premium p-5">
-                <div className="text-2xl text-[#A98224] mb-3">{item.icon}</div>
+                <div className="text-2xl text-[#9A7B2F] mb-3">{item.icon}</div>
                 <h3 className="font-semibold text-white mb-2">{item.titleEn}</h3>
                 <p className="text-sm text-[#606060] leading-relaxed">{item.descriptionEn}</p>
               </div>

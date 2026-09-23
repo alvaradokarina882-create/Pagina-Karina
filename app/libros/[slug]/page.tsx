@@ -81,7 +81,7 @@ export default async function BookPage({
             <span>/</span>
             <Link href="/libros" className="hover:text-[#606060]">Libros</Link>
             <span>/</span>
-            <span className="text-[#A98224]">{book.title}</span>
+            <span className="text-[#9A7B2F]">{book.title}</span>
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-20 items-start">
@@ -92,7 +92,7 @@ export default async function BookPage({
                 <div
                   className="relative w-64 h-80 rounded-xl overflow-hidden"
                   style={{
-                    boxShadow: "0 0 60px rgba(195, 160, 74, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
+                    boxShadow: "0 0 60px rgba(181, 154, 85, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
                   }}
                 >
                   <Image
@@ -106,7 +106,7 @@ export default async function BookPage({
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
                 </div>
                 {book.status === "coming-soon" && (
-                  <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#C3A04A] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
+                  <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#B59A55] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
                     <span>PRÓX.</span>
                   </div>
                 )}
@@ -135,7 +135,7 @@ export default async function BookPage({
               <div className="space-y-3 mb-8">
                 {book.chapters.map((chapter, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <span className="text-[#A98224] font-mono text-sm shrink-0">
+                    <span className="text-[#9A7B2F] font-mono text-sm shrink-0">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="text-[#a8a8a8] text-sm">{chapter}</span>

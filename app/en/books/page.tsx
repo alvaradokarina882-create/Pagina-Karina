@@ -59,12 +59,12 @@ export default function EnBooksPage() {
       />
 
       <section className="pt-32 pb-20 bg-[#050505] relative overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#C3A04A]/4 blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#B59A55]/4 blur-[100px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
             <Link href="/en" className="hover:text-[#606060]">Home</Link>
             <span>/</span>
-            <span className="text-[#A98224]">Books</span>
+            <span className="text-[#9A7B2F]">Books</span>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -72,21 +72,21 @@ export default function EnBooksPage() {
             <div className="flex justify-center">
               <div className="relative animate-float">
                 <div
-                  className="relative w-64 h-80 lg:w-80 lg:h-[26rem] rounded-xl overflow-hidden border border-[#A98224]/30"
+                  className="relative w-64 h-80 lg:w-80 lg:h-[26rem] rounded-xl overflow-hidden border border-[#9A7B2F]/30"
                   style={{
                     background: "linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #0a0a0a 100%)",
-                    boxShadow: "0 0 60px rgba(195, 160, 74, 0.15)",
+                    boxShadow: "0 0 60px rgba(181, 154, 85, 0.15)",
                   }}
                 >
                   <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                    <div className="text-[#A98224] text-2xl mb-4">✦</div>
-                    <div className="text-xs uppercase tracking-widest text-[#A98224]/60 mb-4">Coming Soon</div>
+                    <div className="text-[#9A7B2F] text-2xl mb-4">✦</div>
+                    <div className="text-xs uppercase tracking-widest text-[#9A7B2F]/60 mb-4">Coming Soon</div>
                     <h2 className="font-serif text-2xl font-bold text-white mb-3">{book.title}</h2>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#A98224] to-transparent mb-3" />
+                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#9A7B2F] to-transparent mb-3" />
                     <p className="text-xs text-[#606060]">Karina Alvarado</p>
                   </div>
                 </div>
-                <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#C3A04A] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
+                <div className="absolute -top-3 -right-3 w-14 h-14 rounded-full bg-[#B59A55] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
                   <span>SOON</span>
                 </div>
               </div>
@@ -94,9 +94,9 @@ export default function EnBooksPage() {
 
             {/* Info */}
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#A98224]/30 bg-[#A98224]/5 mb-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C3A04A] animate-pulse" />
-                <span className="text-xs text-[#A98224]">Coming Soon · In Spanish</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#9A7B2F]/30 bg-[#9A7B2F]/5 mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#B59A55] animate-pulse" />
+                <span className="text-xs text-[#9A7B2F]">Coming Soon · In Spanish</span>
               </div>
               <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
                 {book.title}
@@ -108,13 +108,13 @@ export default function EnBooksPage() {
 
               <div className="divider-gold my-6" />
 
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-4">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#9A7B2F] mb-4">
                 What's inside
               </h3>
               <div className="space-y-2 mb-6">
                 {book.chapters.slice(0, 5).map((ch, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm">
-                    <span className="text-[#A98224] font-mono text-xs">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="text-[#9A7B2F] font-mono text-xs">{String(i + 1).padStart(2, "0")}</span>
                     <span className="text-[#a8a8a8]">{ch}</span>
                   </div>
                 ))}

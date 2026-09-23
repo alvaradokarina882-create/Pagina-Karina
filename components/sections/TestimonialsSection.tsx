@@ -20,7 +20,7 @@ export function TestimonialsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
             Resultados reales
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-4">
@@ -41,7 +41,7 @@ export function TestimonialsSection() {
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.stars }).map((_, si) => (
-                  <span key={si} className="text-[#C3A04A] text-sm">★</span>
+                  <span key={si} className="text-[#B59A55] text-sm">★</span>
                 ))}
               </div>
 
@@ -51,14 +51,14 @@ export function TestimonialsSection() {
               </p>
 
               {/* Result badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#A98224]/10 border border-[#A98224]/20 rounded-full mb-5 self-start">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C3A04A]" />
-                <span className="text-xs font-semibold text-[#A98224]">{t.result}</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#9A7B2F]/10 border border-[#9A7B2F]/20 rounded-full mb-5 self-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#B59A55]" />
+                <span className="text-xs font-semibold text-[#9A7B2F]">{t.result}</span>
               </div>
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-[#1e1e1e]">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#A98224] to-[#70510F] flex items-center justify-center text-black text-sm font-bold shrink-0">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#9A7B2F] to-[#5F4818] flex items-center justify-center text-black text-sm font-bold shrink-0">
                   {t.name[0]}
                 </div>
                 <div>

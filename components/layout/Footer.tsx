@@ -30,7 +30,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C3A04A] to-[#8C6918] flex items-center justify-center text-black font-bold">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#B59A55] to-[#796020] flex items-center justify-center text-black font-bold">
                 K
               </div>
               <span className="font-serif text-xl font-bold text-gold">
@@ -53,7 +53,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-9 h-9 rounded-full border border-[#1e1e1e] flex items-center justify-center text-[#606060] text-xs font-bold hover:border-[#A98224] hover:text-[#C3A04A] transition-all"
+                  className="w-9 h-9 rounded-full border border-[#1e1e1e] flex items-center justify-center text-[#606060] text-xs font-bold hover:border-[#9A7B2F] hover:text-[#B59A55] transition-all"
                 >
                   {social.icon}
                 </a>
@@ -64,7 +64,7 @@ export function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-[#C3A04A] mb-4">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-[#B59A55] mb-4">
                 {section}
               </h3>
               <ul className="space-y-2">

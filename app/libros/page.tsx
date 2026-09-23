@@ -66,9 +66,9 @@ export default function LibrosPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-[#050505] relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#C3A04A]/4 blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#B59A55]/4 blur-[100px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#9A7B2F] mb-4 block">
             Publicaciones
           </span>
           <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
@@ -92,7 +92,7 @@ export default function LibrosPage() {
                 <div
                   className="relative w-64 h-80 lg:w-80 lg:h-[26rem] rounded-xl overflow-hidden"
                   style={{
-                    boxShadow: "0 0 60px rgba(195, 160, 74, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
+                    boxShadow: "0 0 60px rgba(181, 154, 85, 0.2), 0 30px 80px rgba(0,0,0,0.7)",
                   }}
                 >
                   <Image
@@ -105,7 +105,7 @@ export default function LibrosPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
                 </div>
-                <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#C3A04A] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
+                <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#B59A55] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
                   <span>PRÓX.</span>
                 </div>
               </div>
@@ -113,9 +113,9 @@ export default function LibrosPage() {
 
             {/* Book info */}
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#A98224]/30 bg-[#A98224]/5 mb-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#C3A04A] animate-pulse" />
-                <span className="text-xs text-[#A98224]">Próximamente</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#9A7B2F]/30 bg-[#9A7B2F]/5 mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#B59A55] animate-pulse" />
+                <span className="text-xs text-[#9A7B2F]">Próximamente</span>
               </div>
 
               <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">
@@ -132,13 +132,13 @@ export default function LibrosPage() {
               <div className="divider-gold my-8" />
 
               {/* Chapters preview */}
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-4">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#9A7B2F] mb-4">
                 Dentro del libro
               </h3>
               <div className="space-y-2 mb-8">
                 {book.chapters.slice(0, 5).map((chapter, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm">
-                    <span className="text-[#A98224] font-mono text-xs mt-0.5">
+                    <span className="text-[#9A7B2F] font-mono text-xs mt-0.5">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <span className="text-[#a8a8a8]">{chapter}</span>
