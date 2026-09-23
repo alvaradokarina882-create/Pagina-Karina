@@ -13,7 +13,7 @@ export function BookSection() {
 
   return (
     <section id="libro" className="py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#C6A15B]/3 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#C3A04A]/3 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -33,7 +33,7 @@ export function BookSection() {
               <div
                 className="relative w-56 h-72 lg:w-72 lg:h-96 rounded-lg overflow-hidden"
                 style={{
-                  boxShadow: "0 0 50px rgba(198, 161, 91, 0.2), 0 25px 60px rgba(0,0,0,0.6)",
+                  boxShadow: "0 0 50px rgba(195, 160, 74, 0.2), 0 25px 60px rgba(0,0,0,0.6)",
                 }}
               >
                 <Image
@@ -49,7 +49,7 @@ export function BookSection() {
               </div>
 
               {/* Coming soon badge */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#C6A15B] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
+              <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-[#C3A04A] flex items-center justify-center text-black text-xs font-bold text-center leading-tight animate-pulse-gold">
                 <span>PRÓX.</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function BookSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
               El libro
             </span>
             <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -77,7 +77,7 @@ export function BookSection() {
             {/* Publisher badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1e1e1e] mb-8">
               <span className="text-xs text-[#404040]">Editorial</span>
-              <span className="text-xs font-semibold text-[#B8922E]">{book.publisher}</span>
+              <span className="text-xs font-semibold text-[#A98224]">{book.publisher}</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">

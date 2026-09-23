@@ -21,7 +21,7 @@ export default function TerminosPage() {
         <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
           <Link href="/" className="hover:text-[#606060]">Inicio</Link>
           <span>/</span>
-          <span className="text-[#B8922E]">Términos de uso</span>
+          <span className="text-[#A98224]">Términos de uso</span>
         </div>
 
         <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
@@ -61,7 +61,7 @@ export default function TerminosPage() {
             </p>
             <p className="mt-3">
               Para solicitar permiso de uso, escríbenos a{" "}
-              <a href={`mailto:${personal.contact.email}`} className="text-[#B8922E]">{personal.contact.email}</a>.
+              <a href={`mailto:${personal.contact.email}`} className="text-[#A98224]">{personal.contact.email}</a>.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function TerminosPage() {
                 "Registrarte para recibir información sobre el libro u otras publicaciones.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#A98224] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -126,16 +126,16 @@ export default function TerminosPage() {
             <h2 className="font-semibold text-white text-base mb-3">9. Contacto</h2>
             <p>
               Para cualquier pregunta sobre estos términos:{" "}
-              <a href={`mailto:${personal.contact.email}`} className="text-[#B8922E]">{personal.contact.email}</a>
+              <a href={`mailto:${personal.contact.email}`} className="text-[#A98224]">{personal.contact.email}</a>
             </p>
           </div>
 
           <div className="divider-gold" />
 
           <p className="text-xs text-[#404040]">
-            <Link href="/privacidad" className="text-[#B8922E]">Política de Privacidad</Link>
+            <Link href="/privacidad" className="text-[#A98224]">Política de Privacidad</Link>
             {" "}·{" "}
-            <Link href="/en/terms" className="text-[#B8922E]">English version</Link>
+            <Link href="/en/terms" className="text-[#A98224]">English version</Link>
           </p>
         </div>
       </div>

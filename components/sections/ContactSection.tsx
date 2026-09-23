@@ -69,7 +69,7 @@ export function ContactSection() {
   return (
     <section id="contacto" className="py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#C6A15B]/3 blur-[80px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#C3A04A]/3 blur-[80px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
@@ -79,7 +79,7 @@ export function ContactSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
             Hablemos
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-4">
@@ -109,7 +109,7 @@ export function ContactSection() {
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                 className="card-premium p-5 flex items-center gap-4 group block hover:no-underline"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#B8922E]/10 border border-[#B8922E]/20 flex items-center justify-center text-[#B8922E] text-xl group-hover:bg-[#B8922E]/20 transition-colors shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-[#A98224]/10 border border-[#A98224]/20 flex items-center justify-center text-[#A98224] text-xl group-hover:bg-[#A98224]/20 transition-colors shrink-0">
                   {option.icon}
                 </div>
                 <div className="flex-1">
@@ -117,9 +117,9 @@ export function ContactSection() {
                     {option.title}
                   </div>
                   <div className="text-xs text-[#606060]">{option.description}</div>
-                  <div className="text-xs text-[#B8922E] mt-1">{option.email}</div>
+                  <div className="text-xs text-[#A98224] mt-1">{option.email}</div>
                 </div>
-                <div className="text-[#404040] group-hover:text-[#B8922E] transition-colors">
+                <div className="text-[#404040] group-hover:text-[#A98224] transition-colors">
                   →
                 </div>
               </motion.a>
@@ -140,7 +140,7 @@ export function ContactSection() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-1.5 text-xs border border-[#1e1e1e] text-[#606060] rounded-lg hover:border-[#B8922E]/40 hover:text-[#B8922E] transition-all"
+                    className="px-3 py-1.5 text-xs border border-[#1e1e1e] text-[#606060] rounded-lg hover:border-[#A98224]/40 hover:text-[#A98224] transition-all"
                   >
                     {social.label}
                   </a>
@@ -157,7 +157,7 @@ export function ContactSection() {
           >
             {sent ? (
               <div className="card-premium p-8 text-center h-full flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-[#B8922E]/20 flex items-center justify-center text-2xl text-[#C6A15B] mb-4">
+                <div className="w-16 h-16 rounded-full bg-[#A98224]/20 flex items-center justify-center text-2xl text-[#C3A04A] mb-4">
                   ✓
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-white mb-2">
@@ -178,7 +178,7 @@ export function ContactSection() {
                       name="nombre"
                       type="text"
                       required
-                      className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#B8922E]/50 transition-colors"
+                      className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#A98224]/50 transition-colors"
                       placeholder="Tu nombre"
                     />
                   </div>
@@ -189,7 +189,7 @@ export function ContactSection() {
                     <input
                       name="pais"
                       type="text"
-                      className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#B8922E]/50 transition-colors"
+                      className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#A98224]/50 transition-colors"
                       placeholder="Tu país"
                     />
                   </div>
@@ -203,7 +203,7 @@ export function ContactSection() {
                     name="email"
                     type="email"
                     required
-                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#B8922E]/50 transition-colors"
+                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#A98224]/50 transition-colors"
                     placeholder="tu@email.com"
                   />
                 </div>
@@ -214,7 +214,7 @@ export function ContactSection() {
                   </label>
                   <select
                     name="tipo"
-                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#B8922E]/50 transition-colors"
+                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#A98224]/50 transition-colors"
                   >
                     <option value="">Seleccionar...</option>
                     <option>Contratar como conferencista</option>
@@ -233,7 +233,7 @@ export function ContactSection() {
                     name="mensaje"
                     required
                     rows={4}
-                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#B8922E]/50 transition-colors resize-none"
+                    className="w-full bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#A98224]/50 transition-colors resize-none"
                     placeholder="Cuéntame sobre tu proyecto o pregunta..."
                   />
                 </div>

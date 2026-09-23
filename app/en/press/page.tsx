@@ -27,10 +27,10 @@ export default function EnPressPage() {
           <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
             <Link href="/en" className="hover:text-[#606060]">Home</Link>
             <span>/</span>
-            <span className="text-[#B8922E]">Press</span>
+            <span className="text-[#A98224]">Press</span>
           </div>
           <div className="max-w-3xl">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#A98224] mb-4 block">
               Media & Press
             </span>
             <h1 className="font-serif text-5xl font-bold mb-6 text-gold-gradient">Press Kit</h1>
@@ -50,7 +50,7 @@ export default function EnPressPage() {
           <h2 className="font-serif text-3xl font-bold mb-8">Official biography</h2>
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#B8922E] mb-4">Short version</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-4">Short version</h3>
               <div className="card-premium p-6">
                 <p className="text-[#a8a8a8] text-sm leading-relaxed">
                   Karina Alvarado is an entrepreneur, author, and international speaker
@@ -68,7 +68,7 @@ export default function EnPressPage() {
               </div>
             </div>
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#B8922E] mb-4">Key facts</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#A98224] mb-4">Key facts</h3>
               <div className="card-premium p-6 space-y-3">
                 {[
                   { label: "Full name", value: "Karina Alvarado" },

@@ -9,12 +9,12 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Background elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-40" />
-      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C6A15B]/4 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] rounded-full bg-[#8A6817]/6 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C3A04A]/4 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-[400px] h-[400px] rounded-full bg-[#8C6918]/6 blur-[100px] pointer-events-none" />
 
       {/* Decorative gold lines */}
-      <div className="absolute top-20 left-10 w-px h-32 bg-gradient-to-b from-transparent via-[#B8922E]/30 to-transparent" />
-      <div className="absolute top-40 right-10 w-px h-48 bg-gradient-to-b from-transparent via-[#B8922E]/20 to-transparent" />
+      <div className="absolute top-20 left-10 w-px h-32 bg-gradient-to-b from-transparent via-[#A98224]/30 to-transparent" />
+      <div className="absolute top-40 right-10 w-px h-48 bg-gradient-to-b from-transparent via-[#A98224]/20 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 text-center">
         {/* Badge */}
@@ -22,10 +22,10 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#B8922E]/30 bg-[#B8922E]/5 mb-8"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#A98224]/30 bg-[#A98224]/5 mb-8"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C6A15B] animate-pulse" />
-          <span className="text-xs font-medium text-[#B8922E] tracking-wide uppercase">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#C3A04A] animate-pulse" />
+          <span className="text-xs font-medium text-[#A98224] tracking-wide uppercase">
             Empresaria · Autora · Líder Visionaria
           </span>
         </motion.div>
@@ -84,12 +84,12 @@ export function HeroSection() {
           className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-[#606060]"
         >
           <div className="flex items-center gap-2">
-            <span className="text-[#C6A15B] font-bold text-base">28+</span>
+            <span className="text-[#C3A04A] font-bold text-base">28+</span>
             <span>Años en la industria de la belleza</span>
           </div>
           <div className="hidden sm:block w-px h-4 bg-[#1e1e1e]" />
           <div className="flex items-center gap-2">
-            <span className="text-[#C6A15B] font-bold text-base">15+</span>
+            <span className="text-[#C3A04A] font-bold text-base">15+</span>
             <span>Años liderando Alvarado's</span>
           </div>
         </motion.div>
