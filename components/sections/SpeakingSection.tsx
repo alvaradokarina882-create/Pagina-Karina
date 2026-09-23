@@ -29,7 +29,7 @@ export function SpeakingSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
               Conferencista internacional
             </span>
             <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -50,7 +50,7 @@ export function SpeakingSection() {
               <ul className="space-y-2">
                 {topics.map((topic) => (
                   <li key={topic} className="flex items-start gap-3">
-                    <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+                    <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
                     <span className="text-sm text-[#a8a8a8]">{topic}</span>
                   </li>
                 ))}
@@ -86,7 +86,7 @@ export function SpeakingSection() {
                       {event.event}
                     </div>
                     <div className="text-xs text-[#606060] mb-2">{event.topic}</div>
-                    <div className="text-xs text-[#d4a017]">
+                    <div className="text-xs text-[#B8922E]">
                       {event.attendees} asistentes
                     </div>
                   </div>

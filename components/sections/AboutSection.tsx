@@ -24,8 +24,8 @@ export function AboutSection() {
           >
             <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0">
               {/* Gold border frame */}
-              <div className="absolute -inset-3 rounded-2xl border border-[#d4a017]/20" />
-              <div className="absolute -inset-6 rounded-2xl border border-[#d4a017]/10" />
+              <div className="absolute -inset-3 rounded-2xl border border-[#B8922E]/20" />
+              <div className="absolute -inset-6 rounded-2xl border border-[#B8922E]/10" />
 
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden bg-[#141414] w-full h-full border border-[#1e1e1e]">
@@ -55,7 +55,7 @@ export function AboutSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
               Mi historia
             </span>
             <h2 className="font-serif text-4xl lg:text-5xl font-bold mb-6 leading-tight">

@@ -83,9 +83,9 @@ function renderContent(content: string) {
         <div key={i} className="overflow-x-auto my-6">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="border-b border-[#d4a017]/30">
+              <tr className="border-b border-[#B8922E]/30">
                 {headers.map((h, hi) => (
-                  <th key={hi} className="text-left py-3 px-4 text-[#d4a017] font-semibold">
+                  <th key={hi} className="text-left py-3 px-4 text-[#B8922E] font-semibold">
                     {h}
                   </th>
                 ))}
@@ -116,7 +116,7 @@ function renderContent(content: string) {
         <ul key={i} className="space-y-2 my-4">
           {checkItems.map((item, ii) => (
             <li key={ii} className="flex items-start gap-3 text-sm text-[#a8a8a8]">
-              <span className="w-4 h-4 rounded border border-[#d4a017]/30 shrink-0 mt-0.5" />
+              <span className="w-4 h-4 rounded border border-[#B8922E]/30 shrink-0 mt-0.5" />
               {item}
             </li>
           ))}
@@ -133,7 +133,7 @@ function renderContent(content: string) {
         <ul key={i} className="space-y-2 my-4">
           {listItems.map((item, ii) => (
             <li key={ii} className="flex items-start gap-3 text-sm text-[#a8a8a8]">
-              <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+              <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
               <span dangerouslySetInnerHTML={{ __html: item.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>') }} />
             </li>
           ))}
@@ -224,11 +224,11 @@ export default async function BlogPostPage({
             <span>/</span>
             <Link href="/blog" className="hover:text-[#606060]">Blog</Link>
             <span>/</span>
-            <span className="text-[#d4a017] line-clamp-1">{post.title}</span>
+            <span className="text-[#B8922E] line-clamp-1">{post.title}</span>
           </nav>
 
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs font-medium text-[#d4a017] border border-[#d4a017]/30 px-3 py-1 rounded-full">
+            <span className="text-xs font-medium text-[#B8922E] border border-[#B8922E]/30 px-3 py-1 rounded-full">
               {post.category}
             </span>
             <span className="text-xs text-[#404040]">{post.readTime} min de lectura</span>
@@ -269,7 +269,7 @@ export default async function BlogPostPage({
 
           {/* Author bio */}
           <div className="card-premium p-6 flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#f9d423] to-[#b8860b] flex items-center justify-center text-black font-bold text-lg shrink-0">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C6A15B] to-[#8A6817] flex items-center justify-center text-black font-bold text-lg shrink-0">
               K
             </div>
             <div>
@@ -279,7 +279,7 @@ export default async function BlogPostPage({
                 con más de 28 años en la industria de la belleza. Creadora del Sistema
                 IMPERIAL y voz de referencia en el emprendimiento femenino en Latinoamérica.
               </p>
-              <Link href="/sobre-mi" className="text-xs text-[#d4a017] mt-2 inline-block hover:text-[#f9d423]">
+              <Link href="/sobre-mi" className="text-xs text-[#B8922E] mt-2 inline-block hover:text-[#C6A15B]">
                 Conocer más →
               </Link>
             </div>
@@ -301,8 +301,8 @@ export default async function BlogPostPage({
                   href={`/blog/${rpost.slug}`}
                   className="card-premium p-4 group block hover:no-underline"
                 >
-                  <div className="text-xs text-[#d4a017] mb-2">{rpost.category}</div>
-                  <h3 className="text-sm font-semibold text-white mb-2 leading-snug group-hover:text-[#f9d423] transition-colors line-clamp-2">
+                  <div className="text-xs text-[#B8922E] mb-2">{rpost.category}</div>
+                  <h3 className="text-sm font-semibold text-white mb-2 leading-snug group-hover:text-[#C6A15B] transition-colors line-clamp-2">
                     {rpost.title}
                   </h3>
                   <div className="text-xs text-[#404040]">{rpost.readTime} min →</div>

@@ -43,7 +43,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#f9d423] to-[#b8860b] flex items-center justify-center text-black font-bold text-sm group-hover:scale-110 transition-transform">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#C6A15B] to-[#8A6817] flex items-center justify-center text-black font-bold text-sm group-hover:scale-110 transition-transform">
             K
           </div>
           <span className="font-serif text-lg font-bold text-gold-gradient hidden sm:block">
@@ -59,7 +59,7 @@ export function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors relative group ${
                   pathname === link.href
-                    ? "text-[#f9d423]"
+                    ? "text-[#C6A15B]"
                     : "text-[#a8a8a8] hover:text-white"
                 }`}
               >
@@ -67,7 +67,7 @@ export function Navbar() {
                 {pathname === link.href && (
                   <motion.span
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-[#f9d423] to-[#b8860b]"
+                    className="absolute -bottom-1 left-0 right-0 h-px bg-gradient-to-r from-[#C6A15B] to-[#8A6817]"
                   />
                 )}
               </Link>
@@ -128,7 +128,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`text-base font-medium py-2 border-b border-[#1e1e1e] transition-colors ${
-                    pathname === link.href ? "text-[#f9d423]" : "text-[#a8a8a8]"
+                    pathname === link.href ? "text-[#C6A15B]" : "text-[#a8a8a8]"
                   }`}
                 >
                   {link.label}

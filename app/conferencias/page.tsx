@@ -159,10 +159,10 @@ export default function ConferenciasPage() {
 
       {/* Hero */}
       <section className="pt-32 pb-20 bg-[#050505] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#f9d423]/4 blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C6A15B]/4 blur-[120px] pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
               Conferencista internacional
             </span>
             <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -194,7 +194,7 @@ export default function ConferenciasPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {topics.map((topic) => (
               <div key={topic.title} className="card-premium p-6">
-                <div className="text-2xl text-[#d4a017] mb-4">{topic.icon}</div>
+                <div className="text-2xl text-[#B8922E] mb-4">{topic.icon}</div>
                 <h3 className="font-serif text-lg font-bold text-white mb-3">
                   {topic.title}
                 </h3>
@@ -208,7 +208,7 @@ export default function ConferenciasPage() {
                   </div>
                   <div className="flex gap-2 text-xs">
                     <span className="text-[#404040]">Duración:</span>
-                    <span className="text-[#d4a017]">{topic.duration}</span>
+                    <span className="text-[#B8922E]">{topic.duration}</span>
                   </div>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function ConferenciasPage() {
                 <ul className="space-y-2">
                   {format.includes.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-[#a8a8a8]">
-                      <span className="text-[#d4a017] mt-0.5 text-xs">✓</span>
+                      <span className="text-[#B8922E] mt-0.5 text-xs">✓</span>
                       {item}
                     </li>
                   ))}

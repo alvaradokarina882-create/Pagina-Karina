@@ -51,12 +51,12 @@ export default function EnglishHomePage() {
       {/* Hero */}
       <section className="min-h-screen flex items-center justify-center bg-[#0a0a0a] relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-40" />
-        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#f9d423]/4 blur-[120px]" />
+        <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-[#C6A15B]/4 blur-[120px]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4a017]/30 bg-[#d4a017]/5 mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#f9d423] animate-pulse" />
-            <span className="text-xs font-medium text-[#d4a017] tracking-wide uppercase">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#B8922E]/30 bg-[#B8922E]/5 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C6A15B] animate-pulse" />
+            <span className="text-xs font-medium text-[#B8922E] tracking-wide uppercase">
               Entrepreneur · Author · Visionary Leader
             </span>
           </div>
@@ -118,7 +118,7 @@ export default function EnglishHomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
                 My story
               </span>
               <h2 className="font-serif text-4xl font-bold mb-6">
@@ -137,7 +137,7 @@ export default function EnglishHomePage() {
             <div className="grid grid-cols-2 gap-4">
               {personal.filosofia.map((item) => (
                 <div key={item.title} className="card-premium p-5">
-                  <div className="text-2xl text-[#d4a017] mb-3">{item.icon}</div>
+                  <div className="text-2xl text-[#B8922E] mb-3">{item.icon}</div>
                   <h3 className="font-semibold text-white text-sm mb-2">{item.titleEn}</h3>
                   <p className="text-xs text-[#606060] leading-relaxed">{item.descriptionEn}</p>
                 </div>
@@ -151,7 +151,7 @@ export default function EnglishHomePage() {
       <section className="py-24 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
               The book
             </span>
             <h2 className="font-serif text-4xl font-bold mb-6">
@@ -185,13 +185,13 @@ export default function EnglishHomePage() {
                 <div key={t.name} className="card-premium p-6">
                   <div className="flex gap-1 mb-4">
                     {Array.from({ length: t.stars }).map((_, i) => (
-                      <span key={i} className="text-[#f9d423] text-sm">★</span>
+                      <span key={i} className="text-[#C6A15B] text-sm">★</span>
                     ))}
                   </div>
                   <p className="text-[#a8a8a8] text-sm leading-relaxed mb-4 italic">
                     &ldquo;{t.text}&rdquo;
                   </p>
-                  <div className="text-xs font-semibold text-[#d4a017]">{t.result}</div>
+                  <div className="text-xs font-semibold text-[#B8922E]">{t.result}</div>
                 </div>
               ))}
             </div>

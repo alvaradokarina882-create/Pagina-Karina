@@ -20,7 +20,7 @@ export function PressSection() {
           className="flex flex-col sm:flex-row items-center justify-between gap-6"
         >
           <div>
-            <p className="text-xs uppercase tracking-widest text-[#d4a017] mb-2">
+            <p className="text-xs uppercase tracking-widest text-[#B8922E] mb-2">
               Medios y prensa
             </p>
             <h2 className="font-serif text-xl font-bold text-white">
@@ -33,7 +33,7 @@ export function PressSection() {
           <div className="flex flex-wrap gap-3 shrink-0">
             <Link
               href="/prensa"
-              className="px-5 py-2.5 text-sm border border-[#d4a017]/40 text-[#d4a017] rounded-lg hover:bg-[#d4a017]/10 transition-colors font-medium"
+              className="px-5 py-2.5 text-sm border border-[#B8922E]/40 text-[#B8922E] rounded-lg hover:bg-[#B8922E]/10 transition-colors font-medium"
             >
               Kit de prensa
             </Link>

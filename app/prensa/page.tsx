@@ -45,7 +45,7 @@ export default function PrensaPage() {
       <section className="pt-32 pb-20 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#d4a017] mb-4 block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#B8922E] mb-4 block">
               Medios y prensa
             </span>
             <h1 className="font-serif text-5xl lg:text-6xl font-bold mb-6">
@@ -73,7 +73,7 @@ export default function PrensaPage() {
           </h2>
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#d4a017] mb-4">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#B8922E] mb-4">
                 Versión corta (150 palabras)
               </h3>
               <div className="card-premium p-6">
@@ -93,7 +93,7 @@ export default function PrensaPage() {
               </div>
             </div>
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#d4a017] mb-4">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[#B8922E] mb-4">
                 Datos clave para medios
               </h3>
               <div className="card-premium p-6 space-y-3">
@@ -131,7 +131,7 @@ export default function PrensaPage() {
               { title: "Logotipo alta resolución", format: "PNG/SVG", type: "Marca" },
             ].map((item) => (
               <div key={item.title} className="card-premium p-4 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-[#d4a017]/10 border border-[#d4a017]/20 flex items-center justify-center text-xs font-bold text-[#d4a017] shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-[#B8922E]/10 border border-[#B8922E]/20 flex items-center justify-center text-xs font-bold text-[#B8922E] shrink-0">
                   {item.type === "Foto" ? "📷" : item.type === "Texto" ? "📄" : "🎨"}
                 </div>
                 <div className="flex-1">
@@ -143,7 +143,7 @@ export default function PrensaPage() {
           </div>
           <p className="text-sm text-[#404040] mt-6">
             Para acceso a materiales, escribe a{" "}
-            <a href={`mailto:${personal.contact.press}`} className="text-[#d4a017]">
+            <a href={`mailto:${personal.contact.press}`} className="text-[#B8922E]">
               {personal.contact.press}
             </a>{" "}
             y te los enviamos directamente.

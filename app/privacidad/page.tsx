@@ -21,7 +21,7 @@ export default function PrivacidadPage() {
         <div className="flex items-center gap-2 text-xs text-[#404040] mb-8">
           <Link href="/" className="hover:text-[#606060]">Inicio</Link>
           <span>/</span>
-          <span className="text-[#d4a017]">Privacidad</span>
+          <span className="text-[#B8922E]">Privacidad</span>
         </div>
 
         <h1 className="font-serif text-4xl font-bold mb-4 text-gold-gradient">
@@ -38,7 +38,7 @@ export default function PrivacidadPage() {
             <p>
               Karina Alvarado, titular de este sitio web (<strong className="text-white">soykarinaalvarado.com</strong>).
               Para cualquier pregunta relacionada con privacidad, escríbenos a{" "}
-              <a href={`mailto:${personal.contact.email}`} className="text-[#d4a017]">{personal.contact.email}</a>.
+              <a href={`mailto:${personal.contact.email}`} className="text-[#B8922E]">{personal.contact.email}</a>.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function PrivacidadPage() {
                 "Tipo de consulta y mensaje (formulario de contacto)",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -72,7 +72,7 @@ export default function PrivacidadPage() {
                 "Enviarte el newsletter si te suscribiste expresamente.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -92,7 +92,7 @@ export default function PrivacidadPage() {
                 "Resend — servicio de entrega de correos electrónicos transaccionales.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -133,14 +133,14 @@ export default function PrivacidadPage() {
                 "Retirar tu consentimiento al newsletter o notificaciones del libro.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#d4a017] mt-0.5 text-xs">◆</span>
+                  <span className="text-[#B8922E] mt-0.5 text-xs">◆</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <p className="mt-3">
               Escríbenos a{" "}
-              <a href={`mailto:${personal.contact.email}`} className="text-[#d4a017]">{personal.contact.email}</a>{" "}
+              <a href={`mailto:${personal.contact.email}`} className="text-[#B8922E]">{personal.contact.email}</a>{" "}
               y respondemos en un plazo máximo de 30 días.
             </p>
           </div>
@@ -157,11 +157,11 @@ export default function PrivacidadPage() {
 
           <p className="text-xs text-[#404040]">
             ¿Preguntas?{" "}
-            <a href={`mailto:${personal.contact.email}`} className="text-[#d4a017]">{personal.contact.email}</a>
+            <a href={`mailto:${personal.contact.email}`} className="text-[#B8922E]">{personal.contact.email}</a>
             {" "}·{" "}
-            <Link href="/terminos" className="text-[#d4a017]">Términos de uso</Link>
+            <Link href="/terminos" className="text-[#B8922E]">Términos de uso</Link>
             {" "}·{" "}
-            <Link href="/en/privacy" className="text-[#d4a017]">English version</Link>
+            <Link href="/en/privacy" className="text-[#B8922E]">English version</Link>
           </p>
         </div>
       </div>

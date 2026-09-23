@@ -52,7 +52,7 @@ export function NewsletterForm({
 
   if (sent) {
     return (
-      <p className="text-[#f9d423] text-sm font-medium py-3">{successMessage}</p>
+      <p className="text-[#C6A15B] text-sm font-medium py-3">{successMessage}</p>
     );
   }
 
@@ -63,7 +63,7 @@ export function NewsletterForm({
         type="email"
         placeholder={placeholder}
         required
-        className="flex-1 bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#d4a017]/50"
+        className="flex-1 bg-[#0a0a0a] border border-[#1e1e1e] rounded-lg px-4 py-3 text-sm text-white placeholder-[#404040] focus:outline-none focus:border-[#B8922E]/50"
       />
       <button
         type="submit"
